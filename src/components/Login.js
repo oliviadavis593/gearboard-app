@@ -1,12 +1,11 @@
 import React from 'react';
+import '../styles/Login.css'
 
 function Login() {
     return(
-        <div>
-            <header>
-                <h2>Login</h2>
-            </header>
+        <div className='Login__box'>
             <form>
+                <h2>Login</h2>
                 <div>
                     <label>Email</label>
                     <input 
@@ -27,7 +26,7 @@ function Login() {
                 </div>
                 <div>
                     <button type='submit'>
-                        Submit
+                        Login
                     </button>
                 </div>
             </form>
