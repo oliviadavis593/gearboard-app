@@ -44,7 +44,7 @@ function Registration() {
                 </div>
                 <div>
                     <button type='submit'>
-                        Login
+                        Submit
                     </button>
                     <button>
                         Demo
