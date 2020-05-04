@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 import '../styles/Registration.css'
 
 function Registration() {
@@ -46,9 +47,7 @@ function Registration() {
                     <button type='submit'>
                         Submit
                     </button>
-                    <button>
-                        Demo
-                    </button>
+                    <NavLink to='/'>Demo</NavLink>
                 </div>
             </form>
         </div>
