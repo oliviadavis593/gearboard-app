@@ -17,13 +17,13 @@ function Landing() {
             </div>
             <div className='landing-about__icons'>
                 <div className='rating__icon'>
-                    
+                    Card Info #1
                 </div>
                 <div className='track__icon'>
-
+                    Card Info #2
                 </div>
                 <div className='comment__icon'>
-
+                    Card Info #3
                 </div>
             </div>
 

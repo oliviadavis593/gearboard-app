@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './style.css';
 
 export default (props) => (
@@ -7,6 +8,7 @@ export default (props) => (
     {props.children}
     <div>
       <button type="submit">{props.buttonLabel}</button>
+      <Link className='demo__buttonLabel' to='/homepage'>Demo</Link>
     </div>
   </form>
 );
