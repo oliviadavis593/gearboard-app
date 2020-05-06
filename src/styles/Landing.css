@@ -1,75 +1,75 @@
 body {
-    width: 100%; 
-    height: 100%; 
-    background-color: #808080;
-    background-image: url('../img/cassette-collection.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #808080;
+  /* background-image: url('../img/cassette-collection.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .landing-main {
-    text-align: center; 
-    color: #fff; 
-    margin-top: 100px; 
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .btns {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .login__button {
-    background: linear-gradient(to bottom right,#ffa700 0,#000);
-    height: 55px; 
-    width: 100px;  
-    margin-right: 40px;  
-    text-decoration: none;
-    transition: 0.9s;
-    color: #000; 
+  background: linear-gradient(to bottom right, #ffa700 0, #000);
+  height: 55px;
+  width: 100px;
+  margin-right: 40px;
+  text-decoration: none;
+  transition: 0.9s;
+  color: #000;
 }
 
 .login__button:hover {
-    color: #fff; 
+  color: #fff;
 }
 
 .registration__button {
-    background: linear-gradient(to bottom right,#53d1fe 0,#000);
-    height: 55px; 
-    width: 100px;
-    text-decoration: none;
-    color: #000; 
+  background: linear-gradient(to bottom right, #53d1fe 0, #000);
+  height: 55px;
+  width: 100px;
+  text-decoration: none;
+  color: #000;
 }
 
 .registration__button:hover {
-    color: #fff; 
-    transition: 0.9s;
+  color: #fff;
+  transition: 0.9s;
 }
 
 .rating__icon,
 .track__icon,
 .comment__icon {
-    width: 13rem;
-    height: 15rem;
-    padding: 1rem;
-    position: relative;
-    text-align: center;
-    transition: all .5s;
-    border: 1px solid #000; 
-    background-color: #fff;
-    border-radius: 3px; 
-    margin: 40px auto; 
+  width: 13rem;
+  height: 15rem;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  transition: all 0.5s;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 40px auto;
 }
 
 /*===================*/
-    /*Footer Style*/
+/*Footer Style*/
 /*===================*/
 .footer {
-    text-align: center; 
-    width: 100%; 
-    color: #fff; 
+  text-align: center;
+  width: 100%;
+  color: #fff;
 }
