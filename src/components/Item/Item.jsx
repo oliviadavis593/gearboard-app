@@ -21,6 +21,11 @@ class Item extends Component {
                 <EditItem 
                 edit='Edit Item'
                 />
+                <div className='gb-list-delete__container'>
+                    <button>
+                        Delete
+                    </button>
+                </div>
             </div>
         )
     }
