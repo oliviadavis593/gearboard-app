@@ -37,17 +37,17 @@ export const registrationFormFields = [
   },
 ];
 
-export const addGearFormFields = [
+export const newGearFormFields = [
   {
-    label: 'Instrument Name',
-    name: 'instrument_name',
+    label: 'Gear Name',
+    name: 'gear_name',
     placeholder: 'Gibson Les Paul',
     required: true,
   },
   {
     label: 'Description',
     name: 'description',
-    placeholder: 'Whatever',
+    placeholder: 'Something something',
     required: true,
   },
   {
@@ -56,3 +56,21 @@ export const addGearFormFields = [
     required: true,
   },
 ];
+
+export const editGearFormFields = [
+  {
+    label: 'Gear Name',
+    name: 'gear_name',
+    placeholder: '',
+    required: true, 
+  }, 
+  {
+    label: 'Description',
+    name: 'description',
+    placeholder: 'Something something',
+  },
+  {
+    label: 'Comment',
+    name: 'comment',
+  }
+]

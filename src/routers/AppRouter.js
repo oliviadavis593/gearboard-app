@@ -4,7 +4,7 @@ import FormGenerator from '../components/FormGenerator';
 import Header from '../views/Header';
 import HomePage from '../views/Homepage';
 import Landing from '../views/Landing';
-import { addGearFormFields, loginFormFields, registrationFormFields } from '../forms';
+import { newGearFormFields, editGearFormFields, loginFormFields, registrationFormFields } from '../forms';
 
 function App() {
   return (
@@ -37,7 +37,13 @@ function App() {
           <Route
             path="/newitem"
             component={(props) => (
-              <FormGenerator title="Add Gear" buttonLabel="Add" fields={addGearFormFields} />
+              <FormGenerator title="Add Gear" buttonLabel="Add" fields={newGearFormFields} />
+            )}
+          />
+          <Route
+            path="/edititem"
+            component={(props) => (
+              <FormGenerator title="Edit Gear" buttonLabel="Change" fields={editGearFormFields} />
             )}
           />
         </Switch>

@@ -18,7 +18,9 @@ class Item extends Component {
                 <div className='item__comment'>
                    comment: {comment}
                 </div>
-                <EditItem />
+                <EditItem 
+                edit='Edit Item'
+                />
             </div>
         )
     }
