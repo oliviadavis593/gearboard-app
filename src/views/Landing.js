@@ -3,7 +3,6 @@ import '../styles/Landing.css';
 import { Link } from 'react-router-dom';
 
 
-
 function Landing() {
     return(
         <div>
@@ -30,12 +29,12 @@ function Landing() {
             <footer className='footer'>
                 <div className='footer__brand-container'>
                     <p className='footer__author-text'>
-                        Created by <a href='https://oliviadavis593.github.io/portfolio/' target='_blank' rel='Portfolio'>Olivia Davis</a>
+                        Created by <a href='https://oliviadavis593.github.io/portfolio/' target='_blank' rel="noopener noreferrer">Olivia Davis</a>
                     </p>
                 </div>
                 <div className='footer__social-media'>
-                    <a href='https://github.com/oliviadavis593' target='_blank' rel='GitHub'>GitHub</a>
-                    <a href='https://www.linkedin.com/in/olivia-davis-ab1848105/' target='_blank' rel='LinkedIn'>LinkedIn</a>
+                    <a href='https://github.com/oliviadavis593' target='_blank' rel="noopener noreferrer">GitHub</a>
+                    <a href='https://www.linkedin.com/in/olivia-davis-ab1848105/' target='_blank' rel="noopener noreferrer">LinkedIn</a>
                 </div>
                 <div className='copyright-text'>
                     <p>

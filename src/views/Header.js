@@ -22,7 +22,7 @@ function Header() {
             </NavLink>
             <div className="nav__main-links">
               <NavLink to="/homepage">All Gear</NavLink>
-              <NavLink to="/newitem">Submit new item</NavLink>
+              <NavLink to="/new-item">Submit new item</NavLink>
               <NavLink to="/">Logout</NavLink>
             </div>
             <span className="navbar-toggle" id="js-navbar-toggle"></span>

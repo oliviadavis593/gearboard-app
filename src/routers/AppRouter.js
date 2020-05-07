@@ -35,13 +35,13 @@ function App() {
         <Switch>
           <Route exact path="/homepage" component={HomePage} />
           <Route
-            path="/newitem"
+            path="/new-item"
             component={(props) => (
               <FormGenerator title="Add Gear" buttonLabel="Add" fields={newGearFormFields} />
             )}
           />
           <Route
-            path="/edititem"
+            path="/edit-item"
             component={(props) => (
               <FormGenerator title="Edit Gear" buttonLabel="Change" fields={editGearFormFields} />
             )}

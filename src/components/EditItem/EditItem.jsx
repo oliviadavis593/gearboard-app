@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 export default function EditItem(props) {
     return(
-        <div className='gb-editItem'>
-            <Link to='/edititem'>{props.edit}</Link>
+        <div className='gb-edit_item'>
+            <Link to='/edit-item'>{props.edit}</Link>
         </div>
     )
 }
