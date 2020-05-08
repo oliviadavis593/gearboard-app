@@ -49,11 +49,13 @@ export const newGearFormFields = [
     name: 'description',
     placeholder: 'Something something',
     required: true,
+    type: 'textarea'
   },
   {
     label: 'Comment',
     name: 'comment',
     required: true,
+    type: 'textarea'
   },
 ];
 
@@ -68,9 +70,11 @@ export const editGearFormFields = [
     label: 'Description',
     name: 'description',
     placeholder: 'Something something',
+    type: 'textarea'
   },
   {
     label: 'Comment',
     name: 'comment',
+    type: 'textarea'
   }
 ]

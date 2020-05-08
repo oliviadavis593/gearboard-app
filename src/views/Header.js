@@ -12,6 +12,7 @@ function Header() {
             <NavLink to="/" className="nav__link">
               <h1>GearBoard</h1>
             </NavLink>
+            <NavLink to='/homepage'>Demo</NavLink>
           </nav>
         </header>
       ) : (
