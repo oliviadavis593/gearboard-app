@@ -1,10 +1,11 @@
 import React from 'react';
+import '../../styles/EditItem.css'
 
 export default function EditItemForm() {
     return(
         <div>
             <main>
-                <form>
+                <form className='gb-edit-item__form'>
                     <fieldset>
                         <legend><h2>Edit Gear Form</h2></legend>
                         <label htmlFor='gear-name'>Gear Name:</label>
@@ -16,20 +17,21 @@ export default function EditItemForm() {
                         />
 
                         <label htmlFor='description'>Description:</label>
-                        <input 
+                        <textarea
                         id='description'
                         type='textarea'
                         name='description'
                         required
-                        />
+                        >
+                        </textarea>
 
                         <label htmlFor='comment'>Comment:</label>
-                        <input 
+                        <textarea
                         id='comment'
                         type='textarea'
                         name='comment'
-                        />
-
+                        >
+                        </textarea>
                     <select id='gb-rating'>
                         <option value='1'>🎸</option>
                         <option value='2'>🎸🎸</option>
@@ -40,7 +42,9 @@ export default function EditItemForm() {
 
                     </fieldset>
 
-                    <button>
+                    <button
+                    className='gb-edit__button'
+                    >
                         Edit Gear
                     </button>
                 </form>

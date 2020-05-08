@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import '../../styles/Registration.css'
 
 export default function Registration() {
     return(
@@ -48,7 +49,7 @@ export default function Registration() {
                         required
                         />
                     </fieldset>
-                    <div className='gb-register-form__links'>
+                    <div className='gb-register-container__buttons'>
                     <button 
                         className='gb-register__button'
                     >

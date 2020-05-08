@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/NewItem.css'
 
 export default function NewItemForm() {
     return(
@@ -17,19 +18,21 @@ export default function NewItemForm() {
                         />
 
                         <label htmlFor='description'>Description:</label>
-                        <input 
+                        <textarea
                         id='description'
                         type='textarea'
                         name='description'
                         required
-                        />
+                        >
+                        </textarea>
 
                         <label htmlFor='comment'>Comment:</label>
-                        <input 
+                        <textarea
                         id='comment'
                         type='textarea'
                         name='comment'
-                        />
+                        >
+                        </textarea>
 
                     <select id='gb-rating'>
                         <option value='1'>🎸</option>
@@ -40,7 +43,9 @@ export default function NewItemForm() {
                     </select>
                     </fieldset>
 
-                    <button>
+                    <button
+                    className='gb-add__button'
+                    >
                         Add Gear
                     </button>
                 </form>

@@ -1,0 +1,41 @@
+fieldset {
+    border: 0;
+}
+
+.gb-edit-item__form {
+    border: 1px solid #fff; 
+    width: 300px; 
+    height: 450px; 
+    margin: 30px auto;
+}
+
+
+legend {
+    text-align: center; 
+}
+
+#gear-name,
+#description, 
+#comment {
+    margin-bottom: 20px; 
+}
+
+input {
+    display: flex; 
+    flex-direction: column; 
+    width: 200px; 
+    height: 25px; 
+}
+
+textarea {
+    display: flex; 
+    flex-direction: column; 
+    width: 200px; 
+    height: 45px; 
+}
+
+
+.gb-edit__button {
+    margin-left: 110px;  
+    margin-top: 30px; 
+}

@@ -17,27 +17,15 @@ function App() {
 
       <div className="App__landing">
         <Route exact path="/" component={Landing} />
-        <Route
-          path="/login"
-          component={Login}
-        />
-        <Route
-          path="/registration"
-          component={Registration}
-        />
+        <Route path="/login" component={Login} />
+        <Route path="/registration" component={Registration} />
       </div>
 
       <main>
         <Switch>
           <Route exact path="/homepage" component={HomePage} />
-          <Route
-            path="/new-item"
-            component={NewItemForm}
-          />
-          <Route
-            path="/edit-item"
-            component={EditItemForm}
-          />
+          <Route path="/new-item" component={NewItemForm} />
+          <Route path="/edit-item" component={EditItemForm} />
         </Switch>
       </main>
     </div>
