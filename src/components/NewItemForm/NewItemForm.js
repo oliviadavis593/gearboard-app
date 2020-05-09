@@ -1,9 +1,13 @@
 import React from 'react';
+import MainHeader from '../../views/MainHeader'
 import '../../styles/NewItem.css'
 
 export default function NewItemForm() {
     return(
         <div>
+            <header>
+                <MainHeader />
+            </header>
             <main>
                 <form className='gb-new-item__form' method='post'>
                     <fieldset>

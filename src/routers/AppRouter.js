@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import GearContext from '../GearContext'
-import Header from '../views/Header';
 import HomePage from '../views/Homepage';
 import Landing from '../views/Landing';
 import Login from '../components/Login/Login'
@@ -29,7 +28,6 @@ class AppRouter extends Component  {
       value={contextValue}
       >
         <div className="App">
-        <Header />
   
         <div className="App__landing">
           <Route exact path="/" component={Landing} />
@@ -44,6 +42,7 @@ class AppRouter extends Component  {
             <Route path="/edit-item" component={EditItemForm} />
           </Switch>
         </main>
+        
       </div>
       </GearContext.Provider>
     );

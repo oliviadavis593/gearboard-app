@@ -1,11 +1,15 @@
 import React from 'react';
 import '../styles/Landing.css';
 import { Link } from 'react-router-dom';
+import LandingHeader from './LandingHeader'
 
 
 function Landing() {
     return(
         <div>
+            <header>
+                <LandingHeader />
+            </header>
             <div className='landing-main'>
                     <h2>Keep tabs on your gear</h2>
                     <h3>Use GearBoard to track all of your instruments</h3>

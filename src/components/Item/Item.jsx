@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import GearContext from '../../GearContext';
-import config from '../../config'
 import EditItem from '../EditItem/EditItem';
 
 

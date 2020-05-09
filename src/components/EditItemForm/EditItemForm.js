@@ -1,9 +1,13 @@
 import React from 'react';
+import MainHeader from '../../views/MainHeader'
 import '../../styles/EditItem.css'
 
 export default function EditItemForm() {
     return(
         <div>
+            <header>
+                <MainHeader />
+            </header>
             <main>
                 <form className='gb-edit-item__form'>
                     <fieldset>
