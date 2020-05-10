@@ -1,0 +1,23 @@
+body {
+    margin: 0px; 
+}
+
+header {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;   
+    margin-top: -4.5px;   
+}
+
+h1 {
+    font-size: 25px;  
+}
+
+.nav__link{
+    color: #000; 
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #eee; 
+    transition: 0.9s; 
+}

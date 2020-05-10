@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import LandingHeader from '../../views/LandingHeader'
 import '../../styles/Login.css'
 
 export default function Login() {
     return(
         <div className='gb-login-page'>
+            <header>
+                <LandingHeader />
+            </header>
             <main role='main'>
                 <form className='gb-login__form' method='post'>
                     <fieldset>

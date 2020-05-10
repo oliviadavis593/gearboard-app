@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import LandingHeader from '../../views/LandingHeader'
 import '../../styles/Registration.css'
 
 export default function Registration() {
     return(
         <div>
+            <header>
+                <LandingHeader />
+            </header>
             <main role='main'>
                 <form className='gb-registration__form' method='post'>
                     <fieldset>
