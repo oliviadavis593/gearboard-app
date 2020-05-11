@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
-import Item from '../Item/Item'
-import STORE from '../store/store'
+import GearContext from '../../GearContext'
+import Item from '../Item/Item';
+
 
 class ItemList extends Component {
+    static contextType = GearContext; 
     render() {
+
+        const items = this.context.items; 
+
         return(
             <section className='gb-item-list__container'>
                 <h2>Gear List</h2>
                 <ul className='gb-item_list'>
-                    {STORE.items.map(item => 
-                        <Item 
-                        key={item.id}
-                        {...item}
-                        />    
-                    )}
+                    <Item 
+                    key={items.id}
+                    {...items}
+                    />
                 </ul>
             </section>
         )
