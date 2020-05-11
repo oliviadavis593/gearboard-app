@@ -13,10 +13,12 @@ class ItemList extends Component {
             <section className='gb-item-list__container'>
                 <h2>Gear List</h2>
                 <ul className='gb-item_list'>
-                    <Item 
-                    key={items.id}
-                    {...items}
-                    />
+                    {items.map(item => 
+                        <Item 
+                        key={item.id}
+                        {...item}
+                        />    
+                    )}
                 </ul>
             </section>
         )

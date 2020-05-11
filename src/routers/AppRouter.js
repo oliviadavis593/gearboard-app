@@ -38,7 +38,7 @@ class AppRouter extends Component  {
   
         <main>
           <Switch>
-            <Route exact path="/homepage" component={HomePage} items={this.state.items}/>
+            <Route exact path="/homepage" component={HomePage} />
             <Route path="/new-item" component={NewItemForm} />
             <Route path="/edit-item" component={EditItemForm} />
           </Switch>
