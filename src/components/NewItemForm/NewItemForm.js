@@ -6,7 +6,7 @@ import '../../styles/NewItem.css'
 
 export default class NewItemForm extends Component {
     state = {
-        rating: 0,
+        rating: '',
         description: '',
         comment: '',
         gearName: ''
@@ -27,11 +27,12 @@ export default class NewItemForm extends Component {
         const newItem = { rating, description, comment, gearName };
     
         this.context.addItem(newItem);
+        this.props.history.push('/homepage');
     }
     
 
     render() {
-        console.log(this.context.addItem)
+        //console.log(this.context.addItem)
         return(
             <div>
                 <header>
@@ -49,7 +50,7 @@ export default class NewItemForm extends Component {
                             <input 
                             id='gear-name'
                             type='text'
-                            name='gear-name'
+                            name='gearName'
                             required
                             onChange={this.handleChange}
                             />
@@ -74,7 +75,7 @@ export default class NewItemForm extends Component {
                             </textarea>
     
                         <label htmlFor='rating'>Rating:</label>
-                        <select name='rating' id='gb-rating'>
+                        <select name='rating' id='gb-rating' onChange={this.handleChange}>
                             <option value='1'>🎸</option>
                             <option value='2'>🎸🎸</option>
                             <option value='3'>🎸🎸🎸</option>

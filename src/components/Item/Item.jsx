@@ -9,7 +9,7 @@ class Item extends Component {
 
     render() {
         const { rating, gearName, description, comment } = this.props; 
-        console.log(this.context.deleteItem)
+        //console.log(this.context.deleteItem)
         return(
             <div className='item'>
                 <h2 className='item__name'>
