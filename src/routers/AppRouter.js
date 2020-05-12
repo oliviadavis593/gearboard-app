@@ -26,6 +26,11 @@ class AppRouter extends Component  {
    })
  }
 
+ handleAddItem = item => {
+  console.log("app item", item)
+  this.setState({ items: [...this.state.items, item]})
+}
+
   render() {
     const contextValue = {
       items: this.state.items,

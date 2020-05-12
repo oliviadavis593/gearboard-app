@@ -5,10 +5,20 @@ import '../../styles/NewItem.css'
 
 
 export default class NewItemForm extends Component {
-
+   
     static contextType = GearContext; 
 
+    handleChange = event => {
+        this.setState({
+            items: {
+                ...this.state.items,
+                [event.target.items]: event.target.value 
+            }
+        })
+    }
+
     render() {
+        console.log(this.context.addItem)
         return(
             <div>
                 <header>
@@ -17,8 +27,7 @@ export default class NewItemForm extends Component {
                 <main>
                     <form 
                     className='gb-new-item__form' 
-                    method='post'
-                    onSubmit={this.handleAddItem}
+                    onSubmit={() => this.context.addItem(this.props.items)}
                     >
                         <fieldset>
                             <legend><h2>Add New Gear</h2></legend>
@@ -48,7 +57,7 @@ export default class NewItemForm extends Component {
                             >
                             </textarea>
     
-                        <select id='gb-rating'>
+                        <select name='rating' id='gb-rating'>
                             <option value='1'>🎸</option>
                             <option value='2'>🎸🎸</option>
                             <option value='3'>🎸🎸🎸</option>
