@@ -19,10 +19,15 @@ class AppRouter extends Component  {
   static contextType = GearContext;
 
 
+  handleAddItem = (event) => {
+    let newItem = this.state.items; 
+  }
+
   render() {
     const contextValue = {
       items: this.state.items,
-      deleteItem: this.handleDeleteItem
+      deleteItem: this.handleDeleteItem,
+      addItem: this.handleAddItem
     }
     return (
       <GearContext.Provider

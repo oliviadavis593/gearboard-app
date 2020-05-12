@@ -4,7 +4,9 @@ import Item from '../Item/Item';
 
 
 class ItemList extends Component {
+
     static contextType = GearContext; 
+    
     render() {
 
         const items = this.context.items; 
