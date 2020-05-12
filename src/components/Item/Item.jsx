@@ -9,6 +9,7 @@ class Item extends Component {
 
     render() {
         const { rating, gearName, description, comment } = this.props; 
+        console.log(this.context.deleteItem)
         return(
             <div className='item'>
                 <h2 className='item__name'>
@@ -30,6 +31,7 @@ class Item extends Component {
                     <button
                     className='gb-item__delete'
                     type='button'
+                    onClick={() => this.context.deleteItem(this.props.id)}
                     >
                         Delete
                     </button>
