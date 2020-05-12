@@ -31,11 +31,23 @@ class AppRouter extends Component  {
   this.setState({ items: [...this.state.items, item]})
 }
 
+handleUpdateItem = updatedItem => {
+  const newItem = this.state.items.map(i => 
+    (i.id === updatedItem.id)
+      ? updatedItem
+      : i
+    )
+    this.setState({
+      items: newItem
+    })
+}
+
   render() {
     const contextValue = {
       items: this.state.items,
       deleteItem: this.handleDeleteItem,
-      addItem: this.handleAddItem
+      addItem: this.handleAddItem,
+      updateItem: this.handleUpdateItem
     }
     return (
       <GearContext.Provider

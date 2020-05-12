@@ -1,58 +1,103 @@
-import React from 'react';
-import MainHeader from '../../views/MainHeader'
+import React, { Component} from 'react';
+import GearContext from '../../GearContext'
+import MainHeader from '../../views/MainHeader';
 import '../../styles/EditItem.css'
 
-export default function EditItemForm() {
-    return(
-        <div>
-            <header>
-                <MainHeader />
-            </header>
-            <main>
-                <form className='gb-edit-item__form'>
-                    <fieldset>
-                        <legend><h2>Edit Gear Form</h2></legend>
-                        <label htmlFor='gear-name'>Gear Name:</label>
-                        <input 
-                        id='gear-name'
-                        type='text'
-                        name='gear-name'
-                        required
-                        />
+export default class EditItemForm extends Component {
+    state = {
+        rating: '',
+        description: '',
+        comment: '',
+        gearName: ''
+    }
 
-                        <label htmlFor='description'>Description:</label>
-                        <textarea
-                        id='description'
-                        type='textarea'
-                        name='description'
-                        required
-                        >
-                        </textarea>
+    static contextType = GearContext; 
 
-                        <label htmlFor='comment'>Comment:</label>
-                        <textarea
-                        id='comment'
-                        type='textarea'
-                        name='comment'
-                        >
-                        </textarea>
-                    <select id='gb-rating'>
-                        <option value='1'>🎸</option>
-                        <option value='2'>🎸🎸</option>
-                        <option value='3'>🎸🎸🎸</option>
-                        <option value='4'>🎸🎸🎸🎸</option>
-                        <option value='5'>🎸🎸🎸🎸🎸</option>
-                    </select>
+    handleChangeGearName = e => {
+        this.setState({ gearName: e.target.value})
+    }
 
-                    </fieldset>
+    handleChangeDescription = e => {
+        this.setState({ description: e.target.value })
+    }
 
-                    <button
-                    className='gb-edit__button'
+    handleChangeComment = e => {
+        this.setState({ comment: e.target.value })
+    }
+
+    handleChangeRating = e => {
+        this.setState({ rating: e.target.value })
+    }
+
+    handleSubmit = e => {
+        e.preventDefault();
+
+        const { rating, description, comment, gearName } = this.state;
+        const editItem = { rating, description, comment, gearName };
+    
+        this.context.updateItem(editItem);
+        this.props.history.push('/homepage');
+    }
+
+    render() {
+        return(
+            <div>
+                <header>
+                    <MainHeader />
+                </header>
+                <main>
+                    <form 
+                    className='gb-edit-item__form'
+                    onSubmit={this.handleSubmit}
                     >
-                        Edit Gear
-                    </button>
-                </form>
-            </main>
-        </div>
-    )
+                        <fieldset>
+                            <legend><h2>Edit Gear Form</h2></legend>
+                            <label htmlFor='gear-name'>Gear Name:</label>
+                            <input 
+                            id='gear-name'
+                            type='text'
+                            name='gearName'
+                            required
+                            onChange={this.handleChangeGearName}
+                            />
+    
+                            <label htmlFor='description'>Description:</label>
+                            <textarea
+                            id='description'
+                            type='textarea'
+                            name='description'
+                            required
+                            onChange={this.handleChangeDescription}
+                            >
+                            </textarea>
+    
+                            <label htmlFor='comment'>Comment:</label>
+                            <textarea
+                            id='comment'
+                            type='textarea'
+                            name='comment'
+                            onChange={this.handleChangeComment}
+                            >
+                            </textarea>
+                        <select name='rating' id='gb-rating' onChange={this.handleChangeRating}>
+                            <option value=''></option>
+                            <option value='🎸'>🎸</option>
+                            <option value='🎸🎸'>🎸🎸</option>
+                            <option value='🎸🎸🎸'>🎸🎸🎸</option>
+                            <option value='🎸🎸🎸🎸'>🎸🎸🎸🎸</option>
+                            <option value='🎸🎸🎸🎸🎸'>🎸🎸🎸🎸🎸</option>
+                        </select>
+    
+                        </fieldset>
+    
+                        <button
+                        className='gb-edit__button'
+                        >
+                            Edit Gear
+                        </button>
+                    </form>
+                </main>
+            </div>
+        )
+    }
 }

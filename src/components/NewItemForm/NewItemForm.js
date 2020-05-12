@@ -76,11 +76,12 @@ export default class NewItemForm extends Component {
     
                         <label htmlFor='rating'>Rating:</label>
                         <select name='rating' id='gb-rating' onChange={this.handleChange}>
-                            <option value='1'>🎸</option>
-                            <option value='2'>🎸🎸</option>
-                            <option value='3'>🎸🎸🎸</option>
-                            <option value='4'>🎸🎸🎸🎸</option>
-                            <option value='5'>🎸🎸🎸🎸🎸</option>
+                            <option value=''></option>
+                            <option value='🎸'>🎸</option>
+                            <option value='🎸🎸'>🎸🎸</option>
+                            <option value='🎸🎸🎸'>🎸🎸🎸</option>
+                            <option value='🎸🎸🎸🎸'>🎸🎸🎸🎸</option>
+                            <option value='🎸🎸🎸🎸🎸'>🎸🎸🎸🎸🎸</option>
                         </select>
                         </fieldset>
     

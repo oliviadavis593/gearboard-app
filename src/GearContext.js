@@ -3,7 +3,8 @@ import React from 'react';
 const GearContext = React.createContext({
     items: [],
     deleteItem: () => {},
-    addItem: () => {}
+    addItem: () => {},
+    updateItem: () => {}
 })
 
 export default GearContext;

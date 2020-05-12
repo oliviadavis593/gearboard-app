@@ -22,7 +22,7 @@ class ItemList extends Component {
                             {...item}
                             />
                         </li>    
-                    )}
+                        )}
                 </ul>
             </section>
         )
