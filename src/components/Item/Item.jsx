@@ -30,7 +30,6 @@ class Item extends Component {
                     <button
                     className='gb-item__delete'
                     type='button'
-                    onClick={() => this.handleClickDelete()}
                     >
                         Delete
                     </button>

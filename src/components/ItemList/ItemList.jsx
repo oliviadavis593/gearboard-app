@@ -16,10 +16,12 @@ class ItemList extends Component {
                 <h2>Gear List</h2>
                 <ul className='gb-item_list'>
                     {items.map(item => 
-                        <Item 
-                        key={item.id}
-                        {...item}
-                        />    
+                        <li key={item.id}>
+                            <Item 
+                            key={item.id}
+                            {...item}
+                            />
+                        </li>    
                     )}
                 </ul>
             </section>
