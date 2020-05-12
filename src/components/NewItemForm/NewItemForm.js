@@ -5,17 +5,30 @@ import '../../styles/NewItem.css'
 
 
 export default class NewItemForm extends Component {
+    state = {
+        rating: 0,
+        description: '',
+        comment: '',
+        gearName: ''
+    }
    
     static contextType = GearContext; 
 
-    handleChange = event => {
+    handleChange = e => {
         this.setState({
-            items: {
-                ...this.state.items,
-                [event.target.items]: event.target.value 
-            }
-        })
+            [e.target.name]: e.target.value
+        });
     }
+
+    handleSubmit = e => {
+        e.preventDefault();
+    
+        const { rating, description, comment, gearName } = this.state;
+        const newItem = { rating, description, comment, gearName };
+    
+        this.context.addItem(newItem);
+    }
+    
 
     render() {
         console.log(this.context.addItem)
@@ -27,7 +40,7 @@ export default class NewItemForm extends Component {
                 <main>
                     <form 
                     className='gb-new-item__form' 
-                    onSubmit={() => this.context.addItem(this.props.items)}
+                    onSubmit={this.handleSubmit}
                     >
                         <fieldset>
                             <legend><h2>Add New Gear</h2></legend>
@@ -38,6 +51,7 @@ export default class NewItemForm extends Component {
                             type='text'
                             name='gear-name'
                             required
+                            onChange={this.handleChange}
                             />
     
                             <label htmlFor='description'>Description:</label>
@@ -46,6 +60,7 @@ export default class NewItemForm extends Component {
                             type='textarea'
                             name='description'
                             required
+                            onChange={this.handleChange}
                             >
                             </textarea>
     
@@ -54,9 +69,11 @@ export default class NewItemForm extends Component {
                             id='comment'
                             type='textarea'
                             name='comment'
+                            onChange={this.handleChange}
                             >
                             </textarea>
     
+                        <label htmlFor='rating'>Rating:</label>
                         <select name='rating' id='gb-rating'>
                             <option value='1'>🎸</option>
                             <option value='2'>🎸🎸</option>
