@@ -29,6 +29,24 @@ export default class NewItemForm extends Component {
         this.context.addItem(newItem);
         this.props.history.push('/homepage');
     }
+
+    /*
+    handleSubmit = e => {
+        e.preventDefault();
+    
+        const { rating, description, comment, gearName } = this.state;
+        const newItem = { 
+            rating,
+            description,
+            comment,
+            gearName,
+            id: Math.floor(100 + Math.random() * 900)
+        };
+    
+        this.context.addItem(newItem);
+        this.props.history.push('/homepage');
+    }
+    */
     
 
     render() {

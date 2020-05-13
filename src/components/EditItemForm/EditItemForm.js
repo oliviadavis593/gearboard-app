@@ -14,7 +14,7 @@ export default class EditItemForm extends Component {
     static contextType = GearContext; 
 
     handleChangeGearName = e => {
-        this.setState({ gearName: e.target.value})
+        this.setState({ gearName: e.target.value })
     }
 
     handleChangeDescription = e => {
