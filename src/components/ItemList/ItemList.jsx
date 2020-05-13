@@ -18,11 +18,11 @@ class ItemList extends Component {
                     {items.map(item => 
                         <li key={item.id}>
                             <Item 
-                            key={item.id}
-                            {...item}
+                            id={item.id}
+                            gearName={item.gearName}
                             />
                         </li>    
-                        )}
+                    )}
                 </ul>
             </section>
         )

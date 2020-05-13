@@ -1,10 +1,18 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import GearContext from '../../GearContext'
 
-export default function EditItem(props) {
-    return(
-        <div className='gb-edit_item'>
-            <Link to='/edit-item'>{props.edit}</Link>
-        </div>
-    )
+export default class EditItem extends Component {
+
+    static contextType = GearContext; 
+
+    render() {
+        const { id } = this.props; 
+        return(
+            <div>
+                <Link to={`/edit/${id}`}>Edit Item</Link>
+            </div>
+        )
+    }
 }
+

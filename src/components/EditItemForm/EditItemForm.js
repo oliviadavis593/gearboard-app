@@ -11,6 +11,15 @@ export default class EditItemForm extends Component {
         gearName: ''
     }
 
+    static defaultProps =  {
+        history: {
+            goBack: () => {}
+        },
+        match: {
+            params: {}
+        }
+    }
+
     static contextType = GearContext; 
 
     handleChangeGearName = e => {
@@ -40,6 +49,7 @@ export default class EditItemForm extends Component {
     }
 
     render() {
+        
         return(
             <div>
                 <header>
@@ -96,6 +106,16 @@ export default class EditItemForm extends Component {
                             Edit Gear
                         </button>
                     </form>
+                    <div>
+                        <button
+                        tag='button'
+                        role='link'
+                        className='gb-edit__goback-button'
+                        onClick={() => this.props.history.goBack()} 
+                        >
+                            Back
+                        </button>
+                    </div>
                 </main>
             </div>
         )
