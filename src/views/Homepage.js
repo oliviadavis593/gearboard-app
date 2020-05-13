@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ItemList from '../components/ItemList/ItemList'
 import GearContext from '../GearContext'
 import MainHeader from './MainHeader'
+import Footer from '../components/Footer/Footer'
 import '../styles/Homepage.css'
 
 class Homepage extends Component {
@@ -13,6 +14,7 @@ class Homepage extends Component {
                    <MainHeader />
                </header>
                <ItemList />
+                <Footer />
            </div>
         )
     }
