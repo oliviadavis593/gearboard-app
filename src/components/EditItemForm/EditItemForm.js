@@ -23,15 +23,15 @@ export default class EditItemForm extends Component {
     static contextType = GearContext; 
 
     handleChangeGearName = e => {
-        this.setState({ gearName: e.target.value })
+        this.setState({ gear_name: e.target.value })
     }
 
     handleChangeDescription = e => {
-        this.setState({ description: e.target.value })
+        this.setState({ features: e.target.value })
     }
 
     handleChangeComment = e => {
-        this.setState({ comment: e.target.value })
+        this.setState({ comments: e.target.value })
     }
 
     handleChangeRating = e => {
@@ -41,8 +41,8 @@ export default class EditItemForm extends Component {
     handleSubmit = e => {
         e.preventDefault();
 
-        const { rating, description, comment, gearName } = this.state;
-        const editItem = { rating, description, comment, gearName };
+        const { rating, features, comment, gear_name } = this.state;
+        const editItem = { rating, features, comment, gear_name };
     
         this.context.updateItem(editItem);
         this.props.history.push('/homepage');
@@ -66,26 +66,26 @@ export default class EditItemForm extends Component {
                             <input 
                             id='gear-name'
                             type='text'
-                            name='gearName'
+                            name='gear_name'
                             required
                             onChange={this.handleChangeGearName}
                             />
     
-                            <label htmlFor='description'>Description:</label>
+                            <label htmlFor='description'>Features:</label>
                             <textarea
-                            id='description'
+                            id='features'
                             type='textarea'
-                            name='description'
+                            name='features'
                             required
                             onChange={this.handleChangeDescription}
                             >
                             </textarea>
     
-                            <label htmlFor='comment'>Comment:</label>
+                            <label htmlFor='comment'>Comments:</label>
                             <textarea
                             id='comment'
                             type='textarea'
-                            name='comment'
+                            name='comments'
                             onChange={this.handleChangeComment}
                             >
                             </textarea>

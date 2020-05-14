@@ -19,7 +19,7 @@ class ItemList extends Component {
                         <li key={item.id}>
                             <Item 
                             id={item.id}
-                            gearName={item.gearName}
+                            gear_name={item.gear_name}
                             />
                         </li>    
                     )}

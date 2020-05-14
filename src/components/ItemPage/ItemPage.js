@@ -32,10 +32,10 @@ export default class ItemPage extends Component {
                     Rating: {item.rating}
                 </div>
                 <div className='item__description'>
-                   Description: {item.description}
+                   Features: {item.features}
                 </div>
                 <div className='item__comment'>
-                   Comment: {item.comment}
+                   Comments: {item.comments}
                 </div>
                 <EditItem />
                 <div>

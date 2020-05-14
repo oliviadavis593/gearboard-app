@@ -9,12 +9,12 @@ class Item extends Component {
     static contextType = GearContext; 
 
     render() {
-        const { gearName, id } = this.props; 
+        const { gear_name, id } = this.props; 
         return(
             <div className='item'>
                 <Link to={`/item/${id}`}>
                     <h2 className='item__name'>
-                        {gearName}
+                        {gear_name}
                     </h2>
                 </Link>
 
@@ -26,7 +26,7 @@ class Item extends Component {
                     onClick={() => this.context.deleteItem(this.props.id)}
                     >
                         {' '}
-                        Remove
+                        Delete
                     </button>
                 </div>
             </div>

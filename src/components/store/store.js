@@ -1,32 +1,39 @@
 export default {
     "items": [
         {
-            id: '2',
+            id: '1',
             rating: '🎸🎸🎸🎸🎸', 
-            gearName: 'Fender Stratocaster',
-            description: 'The standard Stratocaster is Fenders entry level Start & can be found for under $600',
-            comment: 'Great feel and great for beginners'
+            gear_name: 'Fender Stratocaster',
+            features: 'The standard Stratocaster is Fenders entry level Start & can be found for under $600',
+            comments: 'Great feel and great for beginners'
         },
         {
             id: '2',
             rating: '🎸🎸🎸', 
-            gearName: 'MPK mini MKII Controller',
-            description: 'Designed for a travelling musician',
-            comment: 'Can be cool but also very limited'
+            gear_name: 'MPK mini MKII Controller',
+            features: 'Designed for a travelling musician',
+            comments: 'Can be cool but also very limited'
         },
         {
             id: '3', 
             rating: '🎸🎸', 
-            gearName: 'Yamaha DGX-660 88-Key Portable Grand',
-            description: 'electric piano',
-            comment: 'Keys are not good'
+            gear_name: 'Yamaha DGX-660 88-Key Portable Grand',
+            features: 'electric piano',
+            comments: 'Keys are not good'
         },
         {
             id: '4', 
             rating: '🎸🎸🎸🎸🎸', 
-            gearName: 'Akai Professional MPK225 25-key controller',
-            description: 'compact performance keyboard',
-            comment: 'Affordably priced & an upgrade from the MPK mini'
+            gear_name: 'Akai Professional MPK225 25-key controller',
+            features: 'compact performance keyboard',
+            comments: 'Affordably priced & an upgrade from the MPK mini'
+        },
+        {
+            id: '5',
+            rating: '🎸🎸🎸🎸🎸',
+            gear_name: 'Zildjian A Custom Crash Symbol',
+            features: '15-18in cymbal ranges',
+            comments: 'The best cymbals I have ever purchased'
         }
     ]
 }
