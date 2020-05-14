@@ -23,8 +23,8 @@ export default class NewItemForm extends Component {
     handleSubmit = e => {
         e.preventDefault();
     
-        const { rating, description, comment, gearName } = this.state;
-        const newItem = { rating, description, comment, gearName };
+        const { rating, features, comments, gear_name } = this.state;
+        const newItem = { rating, features, comments, gear_name };
     
         this.context.addItem(newItem);
         this.props.history.push('/homepage');
@@ -68,26 +68,26 @@ export default class NewItemForm extends Component {
                             <input 
                             id='gear-name'
                             type='text'
-                            name='gearName'
+                            name='gear_name'
                             required
                             onChange={this.handleChange}
                             />
     
-                            <label htmlFor='description'>Description:</label>
+                            <label htmlFor='description'>Features:</label>
                             <textarea
-                            id='description'
+                            id='features'
                             type='textarea'
-                            name='description'
+                            name='features'
                             required
                             onChange={this.handleChange}
                             >
                             </textarea>
     
-                            <label htmlFor='comment'>Comment:</label>
+                            <label htmlFor='comment'>Comments:</label>
                             <textarea
-                            id='comment'
+                            id='comments'
                             type='textarea'
-                            name='comment'
+                            name='comments'
                             onChange={this.handleChange}
                             >
                             </textarea>

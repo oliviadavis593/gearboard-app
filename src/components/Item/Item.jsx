@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import GearContext from '../../GearContext';
+import '../../styles/Item.css'
 
 
 
@@ -11,9 +12,9 @@ class Item extends Component {
     render() {
         const { gear_name, id } = this.props; 
         return(
-            <div className='item'>
+            <div className='gb-item'>
                 <Link to={`/item/${id}`}>
-                    <h2 className='item__name'>
+                    <h2 className='gb-item__gear_name'>
                         {gear_name}
                     </h2>
                 </Link>

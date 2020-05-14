@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GearContext from '../../GearContext'
 import Item from '../Item/Item';
+import '../../styles/ItemList.css'
 
 
 class ItemList extends Component {

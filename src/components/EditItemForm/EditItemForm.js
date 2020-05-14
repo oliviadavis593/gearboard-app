@@ -89,6 +89,8 @@ export default class EditItemForm extends Component {
                             onChange={this.handleChangeComment}
                             >
                             </textarea>
+                        
+                        <label htmlFor='rating'>Rating:</label>
                         <select name='rating' id='gb-rating' onChange={this.handleChangeRating}>
                             <option value=''></option>
                             <option value='🎸'>🎸</option>
