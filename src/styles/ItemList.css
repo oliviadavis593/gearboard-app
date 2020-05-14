@@ -4,6 +4,7 @@
     list-style-type: none; 
     text-align: center; 
     margin: 0 auto; 
+    width: 325px; 
 }
 
 .gb-item__delete {
