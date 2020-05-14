@@ -13,8 +13,8 @@ header {
     margin-top: -4.5px;   
 }
 
-h1 {
-    font-size: 25px;  
+h2 {
+    text-align: center; 
 }
 
 .nav__link{

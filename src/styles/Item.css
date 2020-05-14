@@ -1,0 +1,17 @@
+.gb-item {
+    --item-height: 88px;
+    background-color: #eee;
+    padding: 8px 0px 8px 8px; 
+    margin: 0 20px 15px -20px;
+}
+
+.gb-item h2{ 
+    font-size: 25px; 
+}
+
+.gb-item__gear_name {
+    text-decoration: none; 
+}
+
+
+

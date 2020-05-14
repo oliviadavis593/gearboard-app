@@ -1,0 +1,19 @@
+
+
+.gb-item_list{
+    list-style-type: none; 
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+.gb-item__delete {
+    --item-button-height: 32px;
+    background-color: #cf6d17;
+    border: 0;
+    color: #eee;
+    font-size: 12px;
+    height: var(--item-button-height);
+    top: calc((var(--item-button-height) + 80px) * -1);
+    transform-origin: right bottom;
+    width: calc(var(--item-height)); 
+}
