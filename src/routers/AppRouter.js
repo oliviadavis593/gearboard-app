@@ -8,17 +8,47 @@ import Registration from '../components/Registration/Registration'
 import NewItemForm from '../components/NewItemForm/NewItemForm'
 import EditItemForm from '../components/EditItemForm/EditItemForm'
 import ItemPage from '../components/ItemPage/ItemPage'
-import store from '../components/store/store'
+//import store from '../components/store/store'
+import config from '../config'
 
 
 
 class AppRouter extends Component  {
 
   state = {
-    items: store.items
+    items: [],
+    error: null, 
+  }
+
+  setItems = items => {
+    this.setState({
+      items, 
+      error: null, 
+    })
   }
 
   static contextType = GearContext;
+
+  componentDidMount() {
+    fetch(`${config.API_ENDPOINT}/api/items`, {
+      method: 'GET',
+      headers: {
+        'content-type': 'application/json'
+      }
+    })
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(res.status)
+        }
+        return res.json()
+      })
+      .then(items => {
+        this.setState({ items })
+      })
+      .catch(error => {
+        console.error({ error })
+      })
+  }
 
 
  handleDeleteItem = itemId => {
