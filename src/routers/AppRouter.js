@@ -89,7 +89,7 @@ handleUpdateItem = updatedItem => {
           <Switch>
             <Route exact path='/homepage' component={HomePage} />
             <Route path='/new-item' component={NewItemForm} />
-            <Route path='/edit/:itemId' component={EditItemForm} />
+            <Route path='/edit/:item_id' component={EditItemForm} />
             <Route path='/item/:item_id' component={ItemPage} />
           </Switch>
         </main>
