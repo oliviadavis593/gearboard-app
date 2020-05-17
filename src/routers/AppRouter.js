@@ -43,10 +43,10 @@ class AppRouter extends Component  {
   }
 
 
- handleDeleteItem = itemId => {
-   console.log(itemId)
+ handleDeleteItem = item_id => {
+   console.log(item_id)
    this.setState({
-     items: this.state.items.filter(item => item.id !== itemId)
+     items: this.state.items.filter(item => item.id !== item_id)
    })
  }
 
