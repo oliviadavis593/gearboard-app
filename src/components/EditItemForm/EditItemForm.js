@@ -1,14 +1,16 @@
 import React, { Component} from 'react';
 import GearContext from '../../GearContext'
 import MainHeader from '../../views/MainHeader';
+import config from '../../config'
 import '../../styles/EditItem.css'
 
 export default class EditItemForm extends Component {
     state = {
         rating: '',
-        description: '',
+        features: '',
         comment: '',
-        gearName: ''
+        gear_name: '',
+        error: null
     }
 
     static defaultProps =  {
@@ -21,6 +23,32 @@ export default class EditItemForm extends Component {
     }
 
     static contextType = GearContext; 
+
+    componentDidMount() {
+        const item_id = this.props.match.params.item_id
+        fetch(`${config.API_ENDPOINT}/api/items/${item_id}`, {
+            method: 'GET',
+        })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(res.status)
+            }
+            return res.json()
+        })
+        .then(responseData => {
+            this.setState({
+                id: responseData.id, 
+                rating: responseData.rating, 
+                gear_name: responseData.gear_name, 
+                features: responseData.features, 
+                comments: responseData.comments
+            })
+        })
+        .catch(error => {
+            console.error(error)
+            this.setState({ error })
+        })
+    }
 
     handleChangeGearName = e => {
         this.setState({ gear_name: e.target.value })
@@ -39,13 +67,31 @@ export default class EditItemForm extends Component {
     }
 
     handleSubmit = e => {
-        e.preventDefault();
-
-        const { rating, features, comment, gear_name } = this.state;
-        const editItem = { rating, features, comment, gear_name };
-    
-        this.context.updateItem(editItem);
-        this.props.history.push('/homepage');
+        e.preventDefault()
+        const { item_id } = this.props.match.params
+        const { id, rating, gear_name, features, comments } = this.state
+        const newItem = { id, rating, gear_name, features, comments } 
+        fetch(`${config.API_ENDPOINT}/api/items/${item_id}`, {
+            method: 'PATCH',
+            body: JSON.stringify(newItem),
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(res.status)
+            }
+            return res.json()
+        })
+        .then(res => {
+            this.context.updateItem(newItem)
+            this.props.history.push('/homepage')
+        })
+        .catch(error => {
+            console.error({ error })
+            this.setState({ error })
+        })
     }
 
     render() {
