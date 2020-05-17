@@ -23,7 +23,7 @@ class Item extends Component {
             if (!res.ok) {
                 throw new Error(res.status)
             }
-            return res.json()
+            //return res.json()
         })
         .then(() => {
             this.context.deleteItem(item_id)
