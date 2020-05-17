@@ -1,56 +1,67 @@
 import React, { Component } from 'react';
-import GearContext from '../../GearContext'
+import GearContext from '../../GearContext';
 import MainHeader from '../../views/MainHeader';
-import '../../styles/NewItem.css'
+import config from '../../config';
+import '../../styles/NewItem.css';
+
 
 
 export default class NewItemForm extends Component {
+
     state = {
-        rating: '',
-        description: '',
-        comment: '',
-        gearName: ''
+        error: null, 
     }
-   
+    
     static contextType = GearContext; 
 
-    handleChange = e => {
-        this.setState({
-            [e.target.name]: e.target.value
-        });
+    handleAddItem(event) {
+        event.preventDefault()
+        const { rating, gear_name, features, comments } = event.target; 
+        const newItem = {
+            rating: rating.value, 
+            gear_name: gear_name.value, 
+            features: features.value, 
+            comments: comments.value, 
+        }
+        this.setState({ error: null })
+        fetch(`${config.API_ENDPOINT}/api/items`, {
+            method: 'POST',
+            body: JSON.stringify(newItem),
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(res.status)
+            }
+            return res.json()
+        })
+        .then(data => {
+            rating.value = '' 
+            gear_name.value = ''
+            features.value = ''
+            comments.value = ''
+            this.context.addItem(data)
+            this.props.history.push('/homepage')
+        })
+        .catch(error => {
+            this.setState({ error })
+        })
     }
 
-    handleSubmit = e => {
-        e.preventDefault();
-    
-        const { rating, features, comments, gear_name } = this.state;
-        const newItem = { rating, features, comments, gear_name };
-    
-        this.context.addItem(newItem);
-        this.props.history.push('/homepage');
-    }
 
-    /*
-    handleSubmit = e => {
-        e.preventDefault();
-    
-        const { rating, description, comment, gearName } = this.state;
-        const newItem = { 
-            rating,
-            description,
-            comment,
-            gearName,
-            id: Math.floor(100 + Math.random() * 900)
-        };
-    
-        this.context.addItem(newItem);
-        this.props.history.push('/homepage');
-    }
-    */
-    
+   handleChange = event => {
+       this.setState({
+           item: {
+               ...this.state.item, 
+               [event.target.name]: event.target.value
+           }
+       })
+   } 
 
     render() {
-        //console.log(this.context.addItem)
+        const { error } = this.state
         return(
             <div>
                 <header>
@@ -59,8 +70,13 @@ export default class NewItemForm extends Component {
                 <main>
                     <form 
                     className='gb-new-item__form' 
-                    onSubmit={this.handleSubmit}
+                    onSubmit={e => {
+                        this.handleAddItem(e)
+                    }}
                     >
+                        <div className='gb-add-item__error'>
+                            { error && <p>{error.message}</p>}
+                        </div>
                         <fieldset>
                             <legend><h2>Add New Gear</h2></legend>
                             
