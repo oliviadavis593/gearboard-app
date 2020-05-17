@@ -43,6 +43,7 @@ class AppRouter extends Component  {
         return res.json()
       })
       .then(items => {
+        console.log("items", items)
         this.setState({ items })
       })
       .catch(error => {
