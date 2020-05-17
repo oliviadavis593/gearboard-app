@@ -19,8 +19,9 @@ export default class ItemPage extends Component {
 
     render() {
         const items = this.context.items; 
-        const { itemId } = this.props.match.params
-        const item = items.find(item => item.id === itemId)
+        const { item_id } = this.props.match.params
+        const item = items.find(item => item.id === item_id)
+        console.log("item", item)
 
 
         return(

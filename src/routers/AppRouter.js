@@ -8,7 +8,6 @@ import Registration from '../components/Registration/Registration'
 import NewItemForm from '../components/NewItemForm/NewItemForm'
 import EditItemForm from '../components/EditItemForm/EditItemForm'
 import ItemPage from '../components/ItemPage/ItemPage'
-//import store from '../components/store/store'
 import config from '../config'
 
 
@@ -18,13 +17,6 @@ class AppRouter extends Component  {
   state = {
     items: [],
     error: null, 
-  }
-
-  setItems = items => {
-    this.setState({
-      items, 
-      error: null, 
-    })
   }
 
   static contextType = GearContext;
@@ -43,7 +35,6 @@ class AppRouter extends Component  {
         return res.json()
       })
       .then(items => {
-        console.log("items", items)
         this.setState({ items })
       })
       .catch(error => {
@@ -99,7 +90,7 @@ handleUpdateItem = updatedItem => {
             <Route exact path='/homepage' component={HomePage} />
             <Route path='/new-item' component={NewItemForm} />
             <Route path='/edit/:itemId' component={EditItemForm} />
-            <Route path='/item/:itemId' component={ItemPage} />
+            <Route path='/item/:item_id' component={ItemPage} />
           </Switch>
         </main>
         
