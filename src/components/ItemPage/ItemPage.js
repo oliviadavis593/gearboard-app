@@ -38,7 +38,9 @@ export default class ItemPage extends Component {
                 <div className='item__comment'>
                    Comments: {item.comments}
                 </div>
-                <EditItem />
+                <EditItem 
+                id={item_id}
+                />
                 <div>
                 <button
                     tag='button'

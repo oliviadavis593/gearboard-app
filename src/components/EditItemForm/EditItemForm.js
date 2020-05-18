@@ -26,6 +26,7 @@ export default class EditItemForm extends Component {
 
     componentDidMount() {
         const item_id = this.props.match.params.item_id
+        console.log("item_id", item_id)
         fetch(`${config.API_ENDPOINT}/api/items/${item_id}`, {
             method: 'GET',
         })
@@ -36,8 +37,8 @@ export default class EditItemForm extends Component {
             return res.json()
         })
         .then(responseData => {
-            this.setState({
-                id: responseData.id, 
+            this.setState({ 
+                id: responseData.id,
                 rating: responseData.rating, 
                 gear_name: responseData.gear_name, 
                 features: responseData.features, 
@@ -82,7 +83,7 @@ export default class EditItemForm extends Component {
             if (!res.ok) {
                 throw new Error(res.status)
             }
-            return res.json()
+            //return res.json()
         })
         .then(res => {
             this.context.updateItem(newItem)
