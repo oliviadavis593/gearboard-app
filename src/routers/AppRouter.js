@@ -7,7 +7,8 @@ import Login from '../components/Login/Login'
 import Registration from '../components/Registration/Registration'
 import NewItemForm from '../components/NewItemForm/NewItemForm'
 import EditItemForm from '../components/EditItemForm/EditItemForm'
-import ItemPage from '../components/ItemPage/ItemPage'
+import ItemPage from '../components/ItemPage/ItemPage';
+import Error from '../Error'
 import config from '../config'
 
 
@@ -77,24 +78,26 @@ handleUpdateItem = updatedItem => {
       <GearContext.Provider
       value={contextValue}
       >
-        <div className="App">
-  
-        <div className="App__landing">
-          <Route exact path="/" component={Landing} />
-          <Route path='/login' component={Login} />
-          <Route path='/registration' component={Registration} />
+        <Error>
+          <div className="App">
+    
+          <div className="App__landing">
+            <Route exact path="/" component={Landing} />
+            <Route path='/login' component={Login} />
+            <Route path='/registration' component={Registration} />
+          </div>
+
+          <main>
+            <Switch>
+              <Route exact path='/homepage' component={HomePage} />
+              <Route path='/new-item' component={NewItemForm} />
+              <Route path='/edit/:item_id' component={EditItemForm} />
+              <Route path='/item/:item_id' component={ItemPage} />
+            </Switch>
+          </main>
+          
         </div>
-  
-        <main>
-          <Switch>
-            <Route exact path='/homepage' component={HomePage} />
-            <Route path='/new-item' component={NewItemForm} />
-            <Route path='/edit/:item_id' component={EditItemForm} />
-            <Route path='/item/:item_id' component={ItemPage} />
-          </Switch>
-        </main>
-        
-      </div>
+        </Error>
       </GearContext.Provider>
     );
   }
