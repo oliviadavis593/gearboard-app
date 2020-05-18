@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import GearContext from '../../GearContext';
-import config from '../../config'
-import '../../styles/Item.css'
+import PropTypes from 'prop-types';
+import config from '../../config';
+import '../../styles/Item.css';
 
 
 
@@ -63,3 +64,7 @@ class Item extends Component {
 
 export default Item; 
 
+Item.propTypes = {
+    gear_name: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired
+}

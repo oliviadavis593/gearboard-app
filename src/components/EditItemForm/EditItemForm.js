@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import GearContext from '../../GearContext'
 import MainHeader from '../../views/MainHeader';
-import config from '../../config'
+import config from '../../config';
 import '../../styles/EditItem.css'
 
 export default class EditItemForm extends Component {
