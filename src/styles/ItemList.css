@@ -1,4 +1,10 @@
+h2 {
+    text-align: center; 
+}
 
+.gb-item-list__container {
+    margin-top: 80px; 
+}
 
 .gb-item_list{
     list-style-type: none; 

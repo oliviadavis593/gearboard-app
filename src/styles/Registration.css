@@ -4,6 +4,7 @@
     width: 300px; 
     height: 500px; 
     margin: 30px auto;
+    background-color: #eee; 
 }
 
 .gb-register-container__buttons {

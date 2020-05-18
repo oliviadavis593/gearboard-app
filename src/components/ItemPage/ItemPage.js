@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GearContext from '../../GearContext'
 import EditItem from '../EditItem/EditItem'
+import '../../styles/ItemPage.css'
 
 
 export default class ItemPage extends Component {
@@ -25,22 +26,33 @@ export default class ItemPage extends Component {
 
 
         return(
-            <section>
+            <section className='gb-item-page__container'>
                 <header>
                     <h1>Gear Item</h1>
                 </header>
-                <div className='item__rating'>
-                    Rating: {item.rating}
-                </div>
-                <div className='item__description'>
-                   Features: {item.features}
-                </div>
-                <div className='item__comment'>
-                   Comments: {item.comments}
-                </div>
-                <EditItem 
-                id={item_id}
-                />
+                <div className='gb-item-info__container'>
+                    <div className='item__rating'>
+                        <h2>Rating</h2> 
+                        <div className='gb-rating'>
+                            {item.rating}
+                        </div>
+                    </div>
+                    <div className='item__features'>
+                        <h2>Features</h2> 
+                        <div className='gb-features'>
+                            {item.features}
+                        </div>
+                    </div>
+                    <div className='item__comments'>
+                        <h2>Comments</h2> 
+                        <div className='gb-comments'>
+                            {item.comments}
+                        </div>
+                    </div>
+                    <EditItem 
+                    id={item_id}
+                    />
+                    </div>
                 <div>
                 <button
                     tag='button'

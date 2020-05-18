@@ -1,0 +1,19 @@
+h1 {
+    text-align: center; 
+}
+
+.gb-item-info__container {
+    border: 1px solid #eee;
+    height: 100%; 
+    width: 300px; 
+    margin: 30px auto; 
+    background-color: #eee; 
+}
+
+.gb-rating,
+.gb-features,
+.gb-comments {
+    margin: 0 auto;  
+    width: 250px; 
+    text-align: center; 
+}
