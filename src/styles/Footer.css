@@ -3,3 +3,12 @@
     width: 100%;
     color: #fff;
   }
+
+.footer__author-text a {
+  color: #000;
+}
+
+.footer__author-text:hover a{
+  color: #e67e22;
+  transition: 0.5s;
+}

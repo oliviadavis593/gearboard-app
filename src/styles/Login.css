@@ -1,10 +1,10 @@
 
 .gb-login__form {
-  border: 1px solid #fff; 
   width: 300px; 
   height: 450px; 
   margin: 30px auto;
   background-color: #eee; 
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
 }
 
 input {
@@ -17,6 +17,27 @@ input {
   margin-left: 90px; 
 }
 
-.gb-login__button {
-  margin-right: 20px; 
+.gb-login__button {  
+  width: 100px; 
+  height: 40px; 
+  border: none; 
+  font-family: 'DM Mono', monospace;
+  background-color: #e67e22;
+  font-size: 15px; 
+}
+
+.gb-login__button:hover {
+  color: #fff; 
+  transition: 0.5s;
+}
+
+.gb-login-form__links {
+  margin: 150px auto; 
+}
+
+.gb-registration__route {
+  text-decoration: none;
+  color: #000;
+  font-family: 'DM Mono', monospace;
+  background-color: #e67e22;   
 }

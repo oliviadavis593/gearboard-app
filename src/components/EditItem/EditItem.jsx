@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import GearContext from '../../GearContext'
+import '../../styles/EditItemRoute.css'
 
 export default class EditItem extends Component {
 
@@ -10,7 +11,7 @@ export default class EditItem extends Component {
         const { id } = this.props; 
         return(
             <div>
-                <Link to={`/edit/${id}`}>Edit Item</Link>
+                <Link to={`/edit/${id}`} className='gb-edit__route'>Edit Item</Link>
             </div>
         )
     }

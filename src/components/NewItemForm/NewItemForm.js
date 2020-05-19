@@ -89,7 +89,7 @@ export default class NewItemForm extends Component {
                             onChange={this.handleChange}
                             />
     
-                            <label htmlFor='description'>Features:</label>
+                            <label htmlFor='features'>Features:</label>
                             <textarea
                             id='features'
                             type='textarea'
@@ -99,7 +99,7 @@ export default class NewItemForm extends Component {
                             >
                             </textarea>
     
-                            <label htmlFor='comment'>Comments:</label>
+                            <label htmlFor='comments'>Comments:</label>
                             <textarea
                             id='comments'
                             type='textarea'

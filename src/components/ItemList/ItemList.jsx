@@ -14,7 +14,6 @@ class ItemList extends Component {
 
         return(
             <section className='gb-item-list__container'>
-                <h2>Gear List</h2>
                 <ul className='gb-item_list'>
                     {items.map(item => 
                         <li key={item.id}>

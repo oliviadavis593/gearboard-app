@@ -3,26 +3,27 @@ fieldset {
 }
 
 .gb-new-item__form {
-    border: 1px solid #fff; 
     width: 300px; 
-    height: 450px; 
+    height: 500px; 
     margin: 30px auto;
     background-color: #eee; 
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
 }
 
 legend {
     text-align: center; 
 }
 
+
 #gear-name,
 #features, 
 #comments,
 #rating {
-    margin-bottom: 20px; 
-    
+    margin-bottom: 30px;
 }
 
 input {
+    border: none;
     display: flex; 
     flex-direction: column; 
     width: 200px; 
@@ -30,15 +31,30 @@ input {
 }
 
 textarea {
+    border: none; 
     display: flex; 
     flex-direction: column; 
     width: 200px; 
     height: 45px; 
+    resize: none; 
 }
 
 
 
 .gb-add__button {
-    margin-left: 110px;  
+    margin-left: 100px;  
     margin-top: 30px; 
+    width: 100px; 
+    height: 55px; 
+    font-size: 15px; 
+    font-family: 'DM Mono', monospace;
+    background-color: #e67e22;
+    border: none; 
+    border-radius: 5%; 
+    color: #000;
+}
+
+.gb-add__button:hover{
+    color: #fff;
+    transition: 0.5s; 
 }

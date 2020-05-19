@@ -1,10 +1,10 @@
 
 .gb-registration__form {
-    border: 1px solid #fff; 
     width: 300px; 
     height: 500px; 
     margin: 30px auto;
     background-color: #eee; 
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
 }
 
 .gb-register-container__buttons {

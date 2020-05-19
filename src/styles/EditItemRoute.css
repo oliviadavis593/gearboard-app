@@ -1,0 +1,11 @@
+.gb-edit__route {
+   text-decoration: none;
+   color: #000;
+    font-family: 'DM Mono', monospace;
+    background-color: #e67e22;
+}
+
+.gb-edit__route:hover {
+    color: #fff; 
+    transition: 0.5s;
+}

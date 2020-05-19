@@ -33,7 +33,7 @@ export default function Login() {
                     <div className='gb-container'>
                     <button className='gb-login__button' type='submit'>Log In</button>
                         <div className='gb-login-form__links'>
-                            <Link to='/registration'>Register</Link>
+                            <Link to='/registration' className='gb-registration__route'>Register</Link>
                         </div>
                     </div>
                 </form>
