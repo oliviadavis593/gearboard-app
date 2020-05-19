@@ -2,20 +2,17 @@ h2 {
     text-align: center; 
 }
 
-.gb-item-list__container {
-    margin-top: 80px; 
-}
 
 .gb-item_list{
     list-style-type: none; 
     text-align: center; 
-    margin: 0 auto; 
+    margin: 100px auto; 
     width: 325px; 
 }
 
 .gb-item__delete {
     --item-button-height: 32px;
-    background-color: #cf6d17;
+    background-color: #e67e22;
     border: 0;
     color: #eee;
     font-size: 12px;
