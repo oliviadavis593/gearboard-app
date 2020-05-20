@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import GearContext from '../../GearContext'
 import MainHeader from '../../views/MainHeader';
+import TokenService from '../../services/token-service'
 import config from '../../config';
 import '../../styles/EditItem.css'
 
@@ -29,6 +30,9 @@ export default class EditItemForm extends Component {
         console.log("item_id", item_id)
         fetch(`${config.API_ENDPOINT}/api/items/${item_id}`, {
             method: 'GET',
+            headers: {
+                'authorization': `basic ${TokenService.getAuthToken()}`
+            }
         })
         .then(res => {
             if (!res.ok) {

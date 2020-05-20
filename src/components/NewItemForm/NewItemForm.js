@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GearContext from '../../GearContext';
 import MainHeader from '../../views/MainHeader';
+import TokenService from '../../services/token-service'
 import config from '../../config';
 import '../../styles/NewItem.css';
 
@@ -28,7 +29,8 @@ export default class NewItemForm extends Component {
             method: 'POST',
             body: JSON.stringify(newItem),
             headers: {
-                'content-type': 'application/json'
+                'content-type': 'application/json',
+                'authorization': `basic ${TokenService.getAuthToken()}`
             }
         })
         .then(res => {
