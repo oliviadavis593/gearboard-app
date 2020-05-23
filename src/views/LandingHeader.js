@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import '../styles/LandingHeader.css'
 
 export default function LandingHeader() {
