@@ -33,6 +33,7 @@ export default class Registration extends Component  {
     }
 
     render() {
+        const { error } = this.state
         return(
             <div>
                 <header>
@@ -43,6 +44,9 @@ export default class Registration extends Component  {
                     className='gb-registration__form' 
                     onSubmit={this.handleSubmit}
                     >
+                        <div role='alert'>
+                            {error && <p className='red'>{error}</p>}
+                        </div>
                         <fieldset>
                             <legend><h2>Registration</h2></legend>
                             <label htmlFor='full_name'>Full Name:</label>
@@ -73,6 +77,7 @@ export default class Registration extends Component  {
                         <div className='gb-register-container__buttons'>
                         <button 
                             className='gb-register__button'
+                            type='submit'
                         >
                                 Register
                             </button>
