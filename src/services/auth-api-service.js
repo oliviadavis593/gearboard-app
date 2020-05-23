@@ -1,13 +1,13 @@
 import config from '../config'
 
 const AuthApiService = {
-    postLogin(credentials) {
+    postLogin({ email, password }) {
         return fetch(`${config.API_ENDPOINT}/api/login`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
             },
-            body: JSON.stringify(credentials),
+            body: JSON.stringify({ email, password }),
         })
             .then(res =>
                 (!res.ok)
