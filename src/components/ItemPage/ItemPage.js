@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom'
 import GearContext from '../../GearContext'
 import EditItem from '../EditItem/EditItem'
 import '../../styles/ItemPage.css'
