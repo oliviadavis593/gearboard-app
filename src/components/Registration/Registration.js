@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 import LandingHeader from '../../views/LandingHeader'
 import AuthApiService from '../../services/auth-api-service'
 import '../../styles/Registration.css'
