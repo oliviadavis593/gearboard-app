@@ -70,11 +70,17 @@ export default class Login extends Component {
                         </div>
                         <div className='gb-container'>
                         <button className='gb-login__button' type='submit'>Login</button>
-                            <div className='gb-login-form__links'>
-                                <Link to='/registration' className='gb-registration__route'>Register</Link>
-                            </div>
                         </div>
                     </form>
+                    <div className='gb-demo__container'>
+                        <h2>Demo</h2>
+                        <p>Email: demo@gearboard.com</p>
+                        <p>Password: demogearpass!</p>
+                    </div>
+                    <div className='gb-login-form__links'>
+                 Don't have an account?
+                            <Link to='/registration' className='gb-registration__route'>Register</Link>
+                    </div>
                 </main>
             </div>
         )

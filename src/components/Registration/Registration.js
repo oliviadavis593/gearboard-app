@@ -82,7 +82,6 @@ export default class Registration extends Component  {
                         >
                                 Register
                             </button>
-                        <Link to='/homepage'>Demo</Link>
                         </div>
                     </form>
                 </main>
