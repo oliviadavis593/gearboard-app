@@ -11,18 +11,8 @@ export default class Login extends Component {
     }
 
     state = { error: null }
-    
-    handleSubmitBasicAuth = ev => {
-        ev.preventDefault();
-        const { email, password } = ev.target 
-
-       TokenService.saveAuthToken(
-           TokenService.makeBasicAuthToken(email.value, password.value)
-       )
-    }
 
     handleSubmitJwtAuth = ev => {
-        console.log("handleSubmit", this.handleSubmitJwtAuth)
         ev.preventDefault()
         this.setState({ error: null })
         const { email, password } = ev.target 
@@ -36,6 +26,7 @@ export default class Login extends Component {
             password.value = ''
             TokenService.saveAuthToken(res.authToken)
             this.props.onLoginSuccess()
+            this.props.history.push('/homepage')
         })
         .catch(res => {
             this.setState({ error: res.error })

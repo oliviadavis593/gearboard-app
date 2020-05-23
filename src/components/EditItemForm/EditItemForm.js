@@ -21,12 +21,11 @@ export default class EditItemForm extends Component {
             params: {}
         }
     }
- 
+
     static contextType = GearContext; 
 
     componentDidMount() {
         const item_id = this.props.match.params.item_id
-        console.log("item_id", item_id)
         fetch(`${config.API_ENDPOINT}/api/items/${item_id}`, {
             method: 'GET'
         })
