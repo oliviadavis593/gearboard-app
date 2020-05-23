@@ -109,7 +109,6 @@ export default class NewItemForm extends Component {
                             onChange={this.handleChange}
                             >
                             </textarea>
-    
                         <label htmlFor='rating'>Rating:</label>
                         <select name='rating' id='gb-rating' onChange={this.handleChange}>
                             <option value=''></option>

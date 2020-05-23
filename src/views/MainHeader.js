@@ -6,7 +6,9 @@ export default function LandingHeader() {
     return(
         <div className='gb-header__container'>
           <header className="gb-main__header">
-            <h1>GearBoard</h1>
+            <NavLink to='/homepage'>
+                <h1>GearBoard</h1>
+            </NavLink>
           </header>
           <nav className="nav">
             <div className="nav__main-links">

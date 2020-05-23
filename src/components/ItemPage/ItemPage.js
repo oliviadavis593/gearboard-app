@@ -23,7 +23,6 @@ export default class ItemPage extends Component {
         const { item_id } = this.props.match.params
         const item = items.find(item => item.id == item_id)
 
-
         return(
             <section className='gb-item-page__container'>
                 <header>
