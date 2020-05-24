@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item component renders the UI as expected 1`] = `
+<div
+  className="gb-item"
+>
+  <a
+    href="/item/undefined"
+    onClick={[Function]}
+  >
+    <h2
+      className="gb-item__gear_name"
+    >
+      test gear_name
+    </h2>
+  </a>
+  <div
+    className="gb-list-delete__container"
+  >
+    <button
+      className="gb-item__delete"
+      onClick={[Function]}
+      type="button"
+    >
+       
+      Delete
+    </button>
+  </div>
+</div>
+`;
