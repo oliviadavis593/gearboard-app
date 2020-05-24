@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom'
 import GearContext from '../../GearContext'
 import EditItem from '../EditItem/EditItem'
 import '../../styles/ItemPage.css'
@@ -22,10 +21,9 @@ export default class ItemPage extends Component {
     render() {
         const items = this.context.items; 
         const { item_id } = this.props.match.params
-        const item = items.find(item => item.id.toString() == item_id.toString()) || {}
+        const item = items.find(item => item.id.toString() === item_id.toString()) || {}
 
         return(
-            <BrowserRouter>
                 <section className='gb-item-page__container'>
                 <header>
                     <h1>Gear Item</h1>
@@ -64,7 +62,6 @@ export default class ItemPage extends Component {
                 </button>
                 </div>
             </section>
-            </BrowserRouter>
         )
     }
 }

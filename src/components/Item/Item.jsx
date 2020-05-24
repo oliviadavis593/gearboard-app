@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import GearContext from '../../GearContext';
 import PropTypes from 'prop-types';
 import config from '../../config';
@@ -39,7 +39,6 @@ class Item extends Component {
     render() {
         const { gear_name, item_id } = this.props; 
         return(
-           <BrowserRouter>
              <div className='gb-item'>
                 <Link to={`/item/${item_id}`}>
                     <h2 className='gb-item__gear_name'>
@@ -59,7 +58,6 @@ class Item extends Component {
                     </button>
                 </div>
             </div>
-           </BrowserRouter>
         )
     }
 }
