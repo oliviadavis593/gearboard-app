@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders the UI as expected 1`] = `
+<div
+  className="gb-login-page"
+>
+  <header>
+    <header
+      className="gb-landing__header"
+    >
+      <a
+        aria-current="page"
+        className="nav__link active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <h1>
+          GearBoard
+        </h1>
+      </a>
+    </header>
+  </header>
+  <main
+    role="main"
+  >
+    <form
+      className="gb-login__form"
+      onSubmit={[Function]}
+    >
+      <fieldset>
+        <legend>
+          <h2>
+            Login
+          </h2>
+        </legend>
+        <label
+          htmlFor="user-email"
+        >
+          Email:
+        </label>
+        <input
+          id="user-email"
+          name="email"
+          required={true}
+          type="email"
+        />
+        <label
+          htmlFor="user-password"
+        >
+          Password:
+        </label>
+        <input
+          id="user-password"
+          name="password"
+          required={true}
+          type="password"
+        />
+      </fieldset>
+      <div
+        role="alert"
+      />
+      <div
+        className="gb-container"
+      >
+        <button
+          className="gb-login__button"
+          type="submit"
+        >
+          Login
+        </button>
+      </div>
+    </form>
+    <div
+      className="gb-demo__container"
+    >
+      <h2>
+        Demo
+      </h2>
+      <p>
+        Email: demo@gearboard.com
+      </p>
+      <p>
+        Password: demogearpass!
+      </p>
+    </div>
+    <div
+      className="gb-login-form__links"
+    >
+      Don't have an account?
+      <a
+        className="gb-registration__route"
+        href="/registration"
+        onClick={[Function]}
+      >
+        Register
+      </a>
+    </div>
+  </main>
+</div>
+`;

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders the UI as expected 1`] = `
+<div>
+  <header>
+    <header
+      className="gb-landing__header"
+    >
+      <a
+        aria-current="page"
+        className="nav__link active"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <h1>
+          GearBoard
+        </h1>
+      </a>
+    </header>
+  </header>
+  <main
+    role="main"
+  >
+    <form
+      className="gb-registration__form"
+      onSubmit={[Function]}
+    >
+      <fieldset>
+        <legend>
+          <h2>
+            Registration
+          </h2>
+        </legend>
+        <label
+          htmlFor="full_name"
+        >
+          Full Name:
+        </label>
+        <input
+          id="full_name"
+          name="full_name"
+          required={true}
+          type="text"
+        />
+        <label
+          htmlFor="email"
+        >
+          Email:
+        </label>
+        <input
+          id="email"
+          name="email"
+          required={true}
+          type="email"
+        />
+        <label
+          htmlFor="password"
+        >
+          Password:
+        </label>
+        <input
+          id="password"
+          name="password"
+          required={true}
+          type="password"
+        />
+      </fieldset>
+      <div
+        role="alert"
+      />
+      <div
+        className="gb-register-container__buttons"
+      >
+        <button
+          className="gb-register__button"
+          type="submit"
+        >
+          Register
+        </button>
+      </div>
+    </form>
+  </main>
+</div>
+`;

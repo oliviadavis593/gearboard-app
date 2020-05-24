@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders the UI as expected 1`] = `
+<section
+  className="gb-item-page__container"
+>
+  <header>
+    <h1>
+      Gear Item
+    </h1>
+  </header>
+  <div
+    className="gb-item-info__container"
+  >
+    <div
+      className="item__rating"
+    >
+      <h2>
+        Rating
+      </h2>
+      <div
+        className="gb-rating"
+      />
+    </div>
+    <div
+      className="item__features"
+    >
+      <h2>
+        Features
+      </h2>
+      <div
+        className="gb-features"
+      />
+    </div>
+    <div
+      className="item__comments"
+    >
+      <h2>
+        Comments
+      </h2>
+      <div
+        className="gb-comments"
+      />
+    </div>
+    <div>
+      <a
+        className="gb-edit__route"
+        href="/edit/undefined"
+        onClick={[Function]}
+      >
+        Edit Item
+      </a>
+    </div>
+  </div>
+  <div>
+    <button
+      className="gb-edit__goback-button"
+      onClick={[Function]}
+      role="link"
+      tag="button"
+    >
+      Back
+    </button>
+  </div>
+</section>
+`;

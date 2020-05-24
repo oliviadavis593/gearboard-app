@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemList Component renders the UI as expected 1`] = `
+<section
+  className="gb-item-list__container"
+>
+  <ul
+    className="gb-item_list"
+  />
+</section>
+`;
