@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import GearContext from '../../GearContext'
 import EditItem from '../EditItem/EditItem'
 import '../../styles/ItemPage.css'
@@ -22,10 +22,11 @@ export default class ItemPage extends Component {
     render() {
         const items = this.context.items; 
         const { item_id } = this.props.match.params
-        const item = items.find(item => item.id == item_id)
+        const item = items.find(item => item.id.toString() == item_id.toString()) || {}
 
         return(
-            <section className='gb-item-page__container'>
+            <BrowserRouter>
+                <section className='gb-item-page__container'>
                 <header>
                     <h1>Gear Item</h1>
                 </header>
@@ -63,6 +64,7 @@ export default class ItemPage extends Component {
                 </button>
                 </div>
             </section>
+            </BrowserRouter>
         )
     }
 }
