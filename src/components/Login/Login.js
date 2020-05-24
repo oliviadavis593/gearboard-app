@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, BrowserRouter } from 'react-router-dom'
 import LandingHeader from '../../views/LandingHeader'
 import TokenService from '../../services/token-service'
 import '../../styles/Login.css'
@@ -37,7 +37,8 @@ export default class Login extends Component {
     render() {
         const { error } = this.state 
         return(
-            <div className='gb-login-page'>
+            <BrowserRouter>
+                <div className='gb-login-page'>
                 <header>
                     <LandingHeader />
                 </header>
@@ -83,6 +84,7 @@ export default class Login extends Component {
                     </div>
                 </main>
             </div>
+            </BrowserRouter>
         )
     }
 }

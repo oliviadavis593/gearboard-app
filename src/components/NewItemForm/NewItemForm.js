@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GearContext from '../../GearContext';
 import MainHeader from '../../views/MainHeader';
+import { BrowserRouter } from 'react-router-dom'
 import TokenService from '../../services/token-service'
 import config from '../../config';
 import '../../styles/NewItem.css';
@@ -65,7 +66,8 @@ export default class NewItemForm extends Component {
     render() {
         const { error } = this.state
         return(
-            <div>
+            <BrowserRouter>
+                <div>
                 <header>
                     <MainHeader />
                 </header>
@@ -129,6 +131,7 @@ export default class NewItemForm extends Component {
                     </form>
                 </main>
             </div>
+            </BrowserRouter>
         )
     }
 }

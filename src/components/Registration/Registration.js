@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LandingHeader from '../../views/LandingHeader'
 import AuthApiService from '../../services/auth-api-service'
+import { BrowserRouter } from 'react-router-dom'
 import '../../styles/Registration.css'
 
 export default class Registration extends Component  {
@@ -35,7 +36,8 @@ export default class Registration extends Component  {
     render() {
         const { error } = this.state
         return(
-            <div>
+            <BrowserRouter>
+                <div>
                 <header>
                     <LandingHeader />
                 </header>
@@ -85,6 +87,7 @@ export default class Registration extends Component  {
                     </form>
                 </main>
             </div>
+            </BrowserRouter>
         )
     }
 }
