@@ -37,11 +37,11 @@ class Item extends Component {
 
 
     render() {
-        const { gear_name, id } = this.props; 
+        const { gear_name, item_id } = this.props; 
         return(
            <BrowserRouter>
              <div className='gb-item'>
-                <Link to={`/item/${id}`}>
+                <Link to={`/item/${item_id}`}>
                     <h2 className='gb-item__gear_name'>
                         {gear_name}
                     </h2>
