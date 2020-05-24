@@ -12,3 +12,17 @@
   color: #e67e22;
   transition: 0.5s;
 }
+
+.gb-footer-github, 
+.gb-footer-linkedin {
+  font-size: 40px; 
+  color: #fff; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+}
+
+.gb-footer-github:hover, 
+.gb-footer-linkedin:hover {
+  color: #e67e22;
+  transition: 0.5s; 
+}

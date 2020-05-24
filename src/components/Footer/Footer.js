@@ -12,8 +12,8 @@ export default function Footer() {
                     </p>
                 </div>
                 <div className='footer__social-media'>
-                    <a href='https://github.com/oliviadavis593' target='_blank' rel="noopener noreferrer">GitHub</a>
-                    <a href='https://www.linkedin.com/in/olivia-davis-ab1848105/' target='_blank' rel="noopener noreferrer">LinkedIn</a>
+                <a href='https://github.com/oliviadavis593' className='gb-footer-github' target='_blank' rel="noopener noreferrer"><ion-icon name="logo-github" class="icons"></ion-icon></a>
+                <a href='https://www.linkedin.com/in/olivia-davis-ab1848105/' className='gb-footer-linkedin' target='_blank' rel="noopener noreferrer"><ion-icon name="logo-linkedin" class="icons"></ion-icon></a>
                 </div>
                 <div className='copyright-text'>
                     <p>
