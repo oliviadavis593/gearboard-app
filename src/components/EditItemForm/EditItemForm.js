@@ -1,7 +1,6 @@
 import React, { Component} from 'react';
 import GearContext from '../../GearContext'
 import MainHeader from '../../views/MainHeader';
-import { BrowserRouter } from 'react-router-dom'
 import config from '../../config';
 import '../../styles/EditItem.css'
 
@@ -98,7 +97,6 @@ export default class EditItemForm extends Component {
     render() {
         
         return(
-            <BrowserRouter>
                 <div>
                 <header>
                     <MainHeader />
@@ -168,7 +166,6 @@ export default class EditItemForm extends Component {
                     </div>
                 </main>
             </div>
-            </BrowserRouter>
         )
     }
 }
