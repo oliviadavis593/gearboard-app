@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Logo from '../img/gearlogo.png'
 import '../styles/MainHeader.css'
 
 export default function LandingHeader() {
@@ -7,7 +8,7 @@ export default function LandingHeader() {
         <div className='gb-header__container'>
           <header className="gb-main__header">
             <NavLink to='/homepage'>
-                <h1>GearBoard</h1>
+              <img src={Logo} alt='gb-logo'/>
             </NavLink>
           </header>
           <nav className="nav">
