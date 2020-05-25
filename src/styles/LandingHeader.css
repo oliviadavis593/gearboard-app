@@ -3,14 +3,16 @@ body {
 }
 
 header {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+    background-color: #00B4FF;
+    border: 1px solid #00B4FF;
     margin-top: -4.5px; 
 }
 
-h1 {
-    font-size: 30px;  
-    padding: 15px;
+.gb-landing__header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px; 
 }
 
 .nav__link{

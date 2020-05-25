@@ -74,8 +74,8 @@ export default class Login extends Component {
                     </form>
                     <div className='gb-demo__container'>
                         <h2>Demo</h2>
-                        <p>Email: demo@gearboard.com</p>
-                        <p>Password: demogearpass!</p>
+                        <p>Email: gearboard@demo.com</p>
+                        <p>Password: Gearpass100!</p>
                     </div>
                     <div className='gb-login-form__links'>
                  Don't have an account?

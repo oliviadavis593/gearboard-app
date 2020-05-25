@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import GearContext from '../GearContext'
 import HomePage from '../views/Homepage';
 import Landing from '../views/Landing';
@@ -73,7 +73,6 @@ handleUpdateItem = updatedItem => {
       updateItem: this.handleUpdateItem
     }
     return (
-      <BrowserRouter>
         <GearContext.Provider
       value={contextValue}
       >
@@ -98,7 +97,6 @@ handleUpdateItem = updatedItem => {
         </div>
         </Error>
       </GearContext.Provider>
-      </BrowserRouter>
     );
   }
 }
