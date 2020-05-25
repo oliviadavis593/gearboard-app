@@ -1,11 +1,16 @@
-.gb-edit__route {
-   text-decoration: none;
-   color: #000;
-    font-family: 'DM Mono', monospace;
+.gb-edit__route button{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Merriweather', serif;
     background-color: #e67e22;
+    width: 100px; 
+    height: 40px; 
+    border: none; 
+    font-size: 15px; 
 }
 
-.gb-edit__route:hover {
+.gb-edit__route:hover button{
     color: #fff; 
     transition: 0.5s;
 }
+

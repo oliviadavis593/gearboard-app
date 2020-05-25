@@ -18,3 +18,20 @@ h1 {
     width: 250px; 
     text-align: center; 
 }
+
+.gb-edit__goback-button {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Merriweather', serif;
+    background-color: #e67e22;
+    width: 100px; 
+    height: 40px; 
+    border: none; 
+    font-size: 15px;  
+}
+
+.gb-edit-btns__container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}

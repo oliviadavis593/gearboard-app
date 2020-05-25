@@ -15,8 +15,12 @@ function Landing() {
                     <h2>Keep tabs on your gear</h2>
                     <h3>Use GearBoard to track all of your instruments</h3>
                 <div className='btns'>
-                    <Link to='/login' className='login__button'>Login</Link>
-                    <Link to='/registration' className='registration__button'>Registration</Link>
+                    <Link to='/login' className='login__button'>
+                        <button>Login</button>
+                    </Link>
+                    <Link to='/registration' className='registration__button'>
+                        <button>Registration</button>
+                    </Link>
                 </div>
             </div>
             <div className='landing-about__icons'>

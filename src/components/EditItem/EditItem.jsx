@@ -11,7 +11,11 @@ export default class EditItem extends Component {
         const { id } = this.props; 
         return(
             <div>
-                <Link to={`/edit/${id}`} className='gb-edit__route'>Edit Item</Link>
+                <Link to={`/edit/${id}`} className='gb-edit__route'>
+                    <button>
+                        Edit Item
+                    </button>
+                </Link>
             </div>
         )
     }

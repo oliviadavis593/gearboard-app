@@ -78,7 +78,7 @@ export default class Login extends Component {
                         <p>Password: Gearpass100!</p>
                     </div>
                     <div className='gb-login-form__links'>
-                 Don't have an account?
+                            Don't have an account?
                             <Link to='/registration' className='gb-registration__route'>Register</Link>
                     </div>
                 </main>

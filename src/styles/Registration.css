@@ -8,9 +8,20 @@
 }
 
 .gb-register-container__buttons {
-    margin-left: 80px;  
+    margin-left: 95px;  
+    margin-top: 30px; 
 }
 
 .gb-register__button {
-    margin-right: 20px; 
+    width: 100px; 
+    height: 40px; 
+    border: none; 
+    font-family: 'Merriweather', serif;
+    background-color: #e67e22;
+    font-size: 15px; 
+}
+
+.gb-register__button:hover {
+    color: #fff;
+    transition: 0.5s; 
 }

@@ -11,6 +11,7 @@ input {
   margin: 10px 0 10px 0;
 }
 
+
 .gb-container {
   display: flex; 
   flex-direction: row;
@@ -21,7 +22,7 @@ input {
   width: 100px; 
   height: 40px; 
   border: none; 
-  font-family: 'DM Mono', monospace;
+  font-family: 'Merriweather', serif;
   background-color: #e67e22;
   font-size: 15px; 
 }
@@ -39,8 +40,13 @@ input {
 .gb-registration__route {
   text-decoration: none;
   color: #fff;
-  font-family: 'DM Mono', monospace;
-  background-color: #e67e22;   
+  font-family: 'Merriweather', serif;
+  margin-left: 5px;   
+}
+
+.gb-registration__route:hover {
+  color: #e67e22;
+  transition: 0.5s; 
 }
 
 .gb-demo__container {
