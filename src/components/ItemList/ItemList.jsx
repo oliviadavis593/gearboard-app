@@ -18,7 +18,7 @@ class ItemList extends Component {
                     {items.map(item => 
                         <li key={item.id}>
                             <Item 
-                            id={item.id}
+                            item_id={item.id}
                             gear_name={item.gear_name}
                             />
                         </li>    
