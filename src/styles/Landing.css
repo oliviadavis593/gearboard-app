@@ -58,14 +58,14 @@ h2 {
 .track__icon,
 .comment__icon {
   width: 13rem;
-  height: 15rem;
+  height: 13rem;
   padding: 1rem;
   position: relative;
   text-align: center;
   transition: all 0.5s;
-  border: 1px solid #000;
-  background-color: #fff;
-  border-radius: 3px;
+  border: 1px solid #e67e22; 
+  background-color: #e67e22;
+  border-radius: 50%;
   margin: 40px auto;
 }
 
@@ -73,4 +73,11 @@ h2 {
 .landing-about__icons {
   padding-bottom: 50px;  
   padding-top: 30px; 
+}
+
+.gb-star__landing,
+.gb-list__landing,
+.gb-check__landing {
+  width: 100px; 
+  margin-top: 40px; 
 }
