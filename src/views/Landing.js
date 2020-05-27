@@ -15,8 +15,10 @@ function Landing() {
                 <LandingHeader />
             </header>
             <div className='landing-main'>
-                    <h2>Keep tabs on your gear</h2>
-                    <h3>Use GearBoard to track all of your instruments</h3>
+                    <div className='landing-main__text'>
+                        <h2>Keep tabs on your gear</h2>
+                        <h3>Use GearBoard to track all of your instruments</h3>
+                    </div>
                 <div className='btns'>
                     <Link to='/login' className='login__button'>
                         <button>Login</button>
