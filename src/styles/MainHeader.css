@@ -16,24 +16,29 @@ h1 {
     transition: 0.5s; 
 }
 
-.gb-header__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.gb-logo {
+    width: 300px; 
+    margin-top: 30px; 
 }
 
-.nav__main-links {
-    display: flex;  
-    font-size: 17px;  
+.gb-header__container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 30px; 
+}
+
+.nav__main-links {  
+    font-size: 15px;  
+    font-weight: bold; 
 }
 
 .gb-link__all,
 .gb-link__new,
 .gb-link__logout {
-    margin-right: 30px;  
-    padding: 10px; 
+    margin-left: 15px; 
+    margin-right: 15px; 
+    font-size: 17px; 
 }
 
 .nav__main-links a {
@@ -46,4 +51,35 @@ h1 {
 .gb-link__logout:hover {
     color: #fff; 
     transition: 0.5s; 
+}
+
+/*========Media Queries============*/
+@media only screen and (min-width: 600px) {
+    .gb-logo {
+        width: 400px; 
+    }
+
+    .gb-link__all,
+    .gb-link__new,
+    .gb-link__logout { 
+        font-size: 20px; 
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .gb-logo {
+        width: 500px; 
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .gb-logo {
+        width: 600px; 
+    }
+
+    .gb-link__all,
+    .gb-link__new,
+    .gb-link__logout { 
+        font-size: 25px; 
+    }
 }

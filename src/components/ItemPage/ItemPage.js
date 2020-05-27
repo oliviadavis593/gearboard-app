@@ -47,13 +47,13 @@ export default class ItemPage extends Component {
                             {item.comments}
                         </div>
                     </div>
-                    </div>
-                <div className='gb-edit-btns__container'>
-                    <div>
-                        <EditItem 
+                    <div className='gb-edit-item'>
+                    <EditItem 
                         id={item_id}
                         />
                     </div>
+                    </div>
+                <div className='gb-edit-btns__container'> 
                 <button
                     tag='button'
                     role='link'

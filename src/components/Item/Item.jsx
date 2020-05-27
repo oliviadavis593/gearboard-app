@@ -65,6 +65,5 @@ class Item extends Component {
 export default Item; 
 
 Item.propTypes = {
-    gear_name: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired
+    gear_name: PropTypes.string.isRequired
 }

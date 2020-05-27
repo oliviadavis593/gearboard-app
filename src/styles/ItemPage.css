@@ -5,7 +5,7 @@ h1 {
 .gb-item-info__container {
     border: 1px solid #eee;
     height: 100%; 
-    width: 350px; 
+    width: 300px; 
     margin: 30px auto; 
     background-color: #eee; 
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
@@ -19,6 +19,11 @@ h1 {
     text-align: center; 
 }
 
+.gb-edit-btns__container {
+    display: flex; 
+    justify-content: center;
+}
+
 .gb-edit__goback-button {
     text-decoration: none;
     color: #000;
@@ -27,11 +32,23 @@ h1 {
     width: 100px; 
     height: 40px; 
     border: none; 
+    border-radius: 20px; 
     font-size: 15px;  
+    margin: 20px  auto; 
 }
 
-.gb-edit-btns__container {
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
+/*========Media Queries============*/
+@media only screen and (min-width: 600px) {
+   h1 {
+       font-size: 35px; 
+   }
+}
+
+@media only screen and (min-width: 1400px) {
+    .gb-item-info__container {
+        width: 350px;
+        font-size: 20px; 
+    }
+
+
 }

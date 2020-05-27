@@ -44,6 +44,7 @@ textarea {
     width: 100px; 
     height: 40px; 
     border: none; 
+    border-radius: 20px; 
     font-size: 15px;
     margin-left: 100px; 
     margin-top: 25px; 
@@ -65,8 +66,10 @@ textarea {
     width: 100px; 
     height: 40px; 
     border: none; 
+    border-radius: 20px; 
     font-size: 15px; 
-    margin-left: 300px; 
+    display: flex; 
+    justify-content: center;
 }
 
 .gb-edit__goback-button:hover {

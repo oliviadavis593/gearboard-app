@@ -14,13 +14,13 @@ input {
 
 .gb-container {
   display: flex; 
-  flex-direction: row;
-  margin-left: 90px; 
+  justify-content: center; 
 }
 
 .gb-login__button {  
   width: 100px; 
   height: 40px; 
+  border-radius: 20px; 
   border: none; 
   font-family: 'Merriweather', serif;
   background-color: #e67e22;
@@ -56,4 +56,28 @@ input {
   text-align: center; 
   background-color: #e67e22;
   color: #fff; 
+}
+
+/*========Media Queries============*/
+@media only screen and (min-width: 750px) {
+  legend h2{
+    font-size: 35px; 
+  }
+
+  label {
+    font-size: 20px; 
+  }
+
+  .gb-login__button {
+    width: 110px; 
+    height: 40px; 
+  }
+
+  .gb-demo__container p{
+    font-size: 20px; 
+  }
+
+  .gb-login-form__links {
+    font-size: 20px; 
+  }
 }

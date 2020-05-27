@@ -8,7 +8,7 @@ export default function LandingHeader() {
         <div className='gb-header__container'>
           <header className="gb-main__header">
             <NavLink to='/homepage'>
-              <img src={Logo} alt='gb-logo'/>
+              <img src={Logo} alt='gb-logo' className='gb-logo'/>
             </NavLink>
           </header>
           <nav className="nav">

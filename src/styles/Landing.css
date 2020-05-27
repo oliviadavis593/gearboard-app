@@ -16,18 +16,20 @@ h2 {
 }
 
 .btns {
-  margin: 30px 0 0 40px; 
+   display: flex; 
+   justify-content: center; 
 
 }
 
 .login__button button { 
   background-color: #e67e22;
+  border-radius: 20px; 
   border: none; 
   color: #000;
   font-family: 'Merriweather', serif;
   font-size: 20px; 
   margin-right: 40px; 
-  height: 50px;
+  height: 30px;
   width: 100px; 
   text-decoration: none;
 }
@@ -39,12 +41,12 @@ h2 {
 
 .registration__button button{ 
   background-color: #e67e22;
+  border-radius: 20px; 
   border: none;
   color: #000;
   font-family: 'Merriweather', serif;
   font-size: 20px; 
-  margin-right: 40px; 
-  height: 50px;
+  height: 30px;
   width: 160px; 
   text-decoration: none;
 }
@@ -57,8 +59,8 @@ h2 {
 .rating__icon,
 .track__icon,
 .comment__icon {
-  width: 13rem;
-  height: 13rem;
+  width: 10rem;
+  height: 10rem;
   padding: 1rem;
   position: relative;
   text-align: center;
@@ -71,13 +73,49 @@ h2 {
 
 
 .landing-about__icons {
-  padding-bottom: 50px;  
+  padding-bottom: 40px;  
   padding-top: 30px; 
 }
 
 .gb-star__landing,
 .gb-list__landing,
 .gb-check__landing {
-  width: 100px; 
-  margin-top: 40px; 
+  width: 70px; 
+  margin-top: 25px; 
+}
+
+/*========Media Queries============*/
+@media only screen and (min-width: 600px) {
+  .gb-logo__header {
+      width: 400px; 
+  }
+
+  .landing-main__text {
+    font-size: 25px; 
+  }
+
+  .login__button button,
+  .registration__button button {
+    height: 40px;  
+  }
+
+  .rating__icon,
+  .track__icon,
+  .comment__icon {
+    width: 13rem;
+    height: 13rem;
+    margin: 60px auto;
+}
+
+  .gb-star__landing,
+  .gb-list__landing,
+  .gb-check__landing {
+    width: 85px; 
+    margin-top: 40px; 
+  }
+
+  .landing-about__icons p{
+    font-size: 20px; 
+  }
+  
 }

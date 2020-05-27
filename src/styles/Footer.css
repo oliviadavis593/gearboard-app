@@ -26,3 +26,19 @@
   color: #e67e22;
   transition: 0.5s; 
 }
+
+/*========Media Queries============*/
+@media only screen and (min-width: 600px) {
+  .footer__author-text {
+    font-size: 20px; 
+  }
+
+  .gb-footer-github,
+  .gb-footer-linkedin {
+    font-size: 50px; 
+  }
+
+  .copyright-text {
+    font-size: 17px; 
+  }
+}

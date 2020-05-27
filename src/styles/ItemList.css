@@ -21,3 +21,14 @@ h2 {
     transform-origin: right bottom;
     width: calc(var(--item-height)); 
 }
+
+@media only screen and (min-width: 750px) {
+    .gb-item_list {
+        width: 375px; 
+    }
+
+    .gb-item__delete {
+        font-size: 17px; 
+    }
+}
+
