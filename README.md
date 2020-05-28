@@ -1,6 +1,6 @@
 # GearBoard :guitar:
 
-- [GearBoard](https://gearboard-app.now.sh/) is a full-stack React application designed to help music lovers keep track of their gear! It provides a responsive, intuitive experience for users to add gear and track all of their instruments.
+- [GearBoard](https://gearboard-app.now.sh/) is a full-stack React application designed to help music lovers keep track of their gear! It provides a responsive, intuitive experience for users to add gear and track all of their instruments. The Back-End repo can be found [here](https://github.com/oliviadavis593/gearboard-api)
 
 # Screenshots 📸
 | ![](src/img/landing-screenshot.png) |
@@ -14,6 +14,12 @@
 | ![](src/img/homepage-screenshot.png) | ![](src/img/item-screenshot.png) |
 |:---:|:---:|
 |Homepage|Item Page|
+
+# User Flow
+- This is the original component composition intended for the application 
+| ![](src/img/userflow.ong)
+|:---:|
+|User Flow|
 
 # Tech Used 🖥
 
