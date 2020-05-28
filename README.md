@@ -4,3 +4,24 @@
 
 # Screenshots 📸
 | <img alt="Landing" src="landing-screenshot.png" width="525"> |
+
+# Tech Used 🖥
+
+**Front-End**
+- HTML5
+- CSS3 
+- React (Javscript Framework)
+
+**Back-End**
+- Node
+- Express
+- PostgreSQL
+- Bcrypt (Password Hashing)
+- JSON Web Tokens (Authentication)
+
+**Testing and Deployment**
+- Jest (Front-End Framework Testing)
+- Enzyme (Front-End Framework Testing)
+- Mocha (Back-End Framework Testing)
+- Chai (Assertion Library For Node)
+- Heroku (Cloud PaaS)
