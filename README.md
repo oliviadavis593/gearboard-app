@@ -7,6 +7,10 @@
 |:---:|
 |Landing|
 
+| ![](src/img/login-screenshot.png) | ![](src/img/registration-screenshot.png) | ![](src/img/edit-screenshot.png)
+|:---:|:---:|:---:|
+|Login|Registration|Edit Form|
+
 # Tech Used 🖥
 
 **Front-End**
