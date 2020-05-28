@@ -13,15 +13,15 @@
 - [React](https://reactjs.org/) (Javscript Framework)
 
 **Back-End**
-- Node
-- Express
-- PostgreSQL (Relational Database Management System)
-- Bcrypt (Password Hashing)
-- JSON Web Tokens (Authentication)
+- [Node](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
+- [PostgreSQL](https://www.postgresql.org/) (Relational Database Management System)
+- [Bcrypt](https://www.npmjs.com/package/bcrypt) (Password Hashing)
+- [JSON Web Tokens](https://jwt.io/) (Authentication)
 
 **Testing and Deployment**
-- Jest (Front-End Framework Testing)
-- Enzyme (Front-End Framework Testing)
-- Mocha (Back-End Framework Testing)
-- Chai (Assertion Library For Node)
-- Heroku (Cloud PaaS)
+- [Jest](https://jestjs.io/) (Front-End Framework Testing)
+- [Enzyme](https://github.com/enzymejs/enzyme) (Front-End Framework Testing)
+- [Mocha](https://mochajs.org/) (Back-End Framework Testing)
+- [Chai](https://www.chaijs.com/) (Assertion Library For Node)
+- [Heroku](https://www.heroku.com/platform) (Cloud PaaS)
