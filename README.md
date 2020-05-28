@@ -10,7 +10,7 @@
 **Front-End**
 - HTML5
 - CSS3 
-- React (Javscript Framework)
+- (React)[https://reactjs.org/] (Javscript Framework)
 
 **Back-End**
 - Node
