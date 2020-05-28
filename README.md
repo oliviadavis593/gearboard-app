@@ -15,7 +15,7 @@
 |:---:|:---:|
 |Homepage|Item Page|
 
-# User Flow
+# User Flow 📓
 - This is the original component composition intended for the application 
 ![](src/img/userflow.png) 
 
