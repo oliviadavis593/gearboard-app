@@ -15,7 +15,7 @@
 **Back-End**
 - Node
 - Express
-- PostgreSQL
+- PostgreSQL (Relational Database Management System)
 - Bcrypt (Password Hashing)
 - JSON Web Tokens (Authentication)
 
