@@ -19,7 +19,6 @@
 - This is the original component composition intended for the application 
 | ![](src/img/userflow.png) |
 |:---:|
-|User Flow|
 
 # Tech Used 🖥
 
