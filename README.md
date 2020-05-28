@@ -11,6 +11,10 @@
 |:---:|:---:|:---:|
 |Login|Registration|Edit Form|
 
+| ![](src/img/homepage-screenshot.png) | ![](src/img/item-screenshot.png) |
+|:---:|:---:|
+|Homepage|Item Page|
+
 # Tech Used 🖥
 
 **Front-End**
