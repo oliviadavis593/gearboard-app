@@ -17,7 +17,7 @@
 
 # User Flow
 - This is the original component composition intended for the application 
-| ![](src/img/userflow.ong) |
+| ![](src/img/userflow.png) |
 |:---:|
 |User Flow|
 
