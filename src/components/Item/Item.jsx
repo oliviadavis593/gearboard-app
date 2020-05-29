@@ -24,7 +24,6 @@ class Item extends Component {
             if (!res.ok) {
                 throw new Error(res.status)
             }
-            //return res.json()
         })
         .then(() => {
             this.context.deleteItem(item_id)
@@ -37,6 +36,7 @@ class Item extends Component {
 
 
     render() {
+        //display only the screen name & delete button for that individual item on the homepage 
         const { gear_name, item_id } = this.props; 
         return(
              <div className='gb-item'>

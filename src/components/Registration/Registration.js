@@ -15,6 +15,7 @@ export default class Registration extends Component  {
         const { full_name, email, password } = ev.target;
 
         this.setState({ error: null })
+        //get the auth-api endpoint with the following info:
         AuthApiService.postUser({
             full_name: full_name.value, 
             email: email.value, 

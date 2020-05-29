@@ -13,6 +13,7 @@ class ItemList extends Component {
         const items = this.context.items; 
 
         return(
+            //display a list of every single item that user has created 
             <section className='gb-item-list__container'>
                 <ul className='gb-item_list'>
                     {items.map(item => 

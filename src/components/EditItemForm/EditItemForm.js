@@ -13,6 +13,7 @@ export default class EditItemForm extends Component {
         error: null
     }
 
+    //routes back to the homepage 
     static defaultProps =  {
         history: {
             goBack: () => {}

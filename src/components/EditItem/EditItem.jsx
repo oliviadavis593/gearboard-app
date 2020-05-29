@@ -10,6 +10,7 @@ export default class EditItem extends Component {
     render() {
         const { id } = this.props; 
         return(
+            //button that leads to the edit item form 
             <div>
                 <Link to={`/edit/${id}`} className='gb-edit__route'>
                     <button>

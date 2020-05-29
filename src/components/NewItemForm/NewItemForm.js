@@ -17,6 +17,7 @@ export default class NewItemForm extends Component {
 
     handleAddItem(event) {
         event.preventDefault()
+        //get the value of each of the inputs 
         const { rating, gear_name, features, comments } = event.target; 
         const newItem = {
             rating: rating.value, 
