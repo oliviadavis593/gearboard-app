@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import LandingHeader from '../../views/LandingHeader'
-import AuthApiService from '../../services/auth-api-service'
-import '../../styles/Registration.css'
+import LandingHeader from '../../views/LandingHeader';
+import AuthApiService from '../../services/auth-api-service';
+import '../../styles/Registration.css';
 
 export default class Registration extends Component  {
     static defaultProps = {
@@ -12,7 +12,7 @@ export default class Registration extends Component  {
 
     handleSubmit = ev => {
         ev.preventDefault()
-        const { full_name, email, password } = ev.target
+        const { full_name, email, password } = ev.target;
 
         this.setState({ error: null })
         AuthApiService.postUser({
@@ -33,7 +33,7 @@ export default class Registration extends Component  {
     }
 
     render() {
-        const { error } = this.state
+        const { error } = this.state;
         return(
                 <div>
                 <header>

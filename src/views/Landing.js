@@ -2,10 +2,10 @@ import React from 'react';
 import '../styles/Landing.css';
 import { Link } from 'react-router-dom';
 import LandingHeader from './LandingHeader';
-import Footer from '../components/Footer/Footer'
-import Star from '../img/star.png'
-import List from '../img/list.png'
-import Check from '../img/check.png'
+import Footer from '../components/Footer/Footer';
+import Star from '../img/star.png';
+import List from '../img/list.png';
+import Check from '../img/check.png';
 
 
 function Landing() {

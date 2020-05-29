@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import GearContext from '../../GearContext';
 import MainHeader from '../../views/MainHeader';
-import TokenService from '../../services/token-service'
+import TokenService from '../../services/token-service';
 import config from '../../config';
 import '../../styles/NewItem.css';
 

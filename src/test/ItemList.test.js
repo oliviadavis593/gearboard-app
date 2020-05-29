@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import renderer from 'react-test-renderer'
-import ItemList from '../components/ItemList/ItemList'
+import renderer from 'react-test-renderer';
+import ItemList from '../components/ItemList/ItemList';
 
 describe('ItemList Component', () => {
     it('renders without crashing', () => {

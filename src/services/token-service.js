@@ -1,4 +1,4 @@
-import config from '../config'
+import config from '../config';
 
 const TokenService = {
     //accepts token variable (a string) & stores in locale storage (TOKEN_KEY)

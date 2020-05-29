@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
-import Login from '../components/Login/Login'
+import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
+import Login from '../components/Login/Login';
 
 
 describe('Footer component', () => {

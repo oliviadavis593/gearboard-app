@@ -3,13 +3,13 @@ import { Route, Switch } from 'react-router-dom';
 import GearContext from '../GearContext'
 import HomePage from '../views/Homepage';
 import Landing from '../views/Landing';
-import Login from '../components/Login/Login'
-import Registration from '../components/Registration/Registration'
-import NewItemForm from '../components/NewItemForm/NewItemForm'
-import EditItemForm from '../components/EditItemForm/EditItemForm'
-import ItemPage from '../components/ItemPage/ItemPage'
-import Error from '../Error'
-import config from '../config'
+import Login from '../components/Login/Login';
+import Registration from '../components/Registration/Registration';
+import NewItemForm from '../components/NewItemForm/NewItemForm';
+import EditItemForm from '../components/EditItemForm/EditItemForm';
+import ItemPage from '../components/ItemPage/ItemPage';
+import Error from '../Error';
+import config from '../config';
 
 
 

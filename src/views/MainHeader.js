@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../img/gearlogo.png'
-import '../styles/MainHeader.css'
+import Logo from '../img/gearlogo.png';
+import '../styles/MainHeader.css';
 
 export default function LandingHeader() {
     return(

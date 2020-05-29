@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
-import Registration from '../components/Registration/Registration'
+import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
+import Registration from '../components/Registration/Registration';
 
 
 describe('Footer component', () => {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import GearContext from '../../GearContext'
-import EditItem from '../EditItem/EditItem'
-import '../../styles/ItemPage.css'
+import GearContext from '../../GearContext';
+import EditItem from '../EditItem/EditItem';
+import '../../styles/ItemPage.css';
 
 
 export default class ItemPage extends Component {

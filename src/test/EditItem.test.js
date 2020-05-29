@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
-import EditItemForm from '../components/EditItemForm/EditItemForm'
+import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
+import EditItemForm from '../components/EditItemForm/EditItemForm';
 
 describe('EditItem component', () => {
     it('renders without crashing', () => {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import GearContext from '../../GearContext'
-import '../../styles/EditItemRoute.css'
+import GearContext from '../../GearContext';
+import '../../styles/EditItemRoute.css';
 
 export default class EditItem extends Component {
 

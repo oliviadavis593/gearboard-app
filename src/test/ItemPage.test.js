@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
-import ItemPage from '../components/ItemPage/ItemPage'
+import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
+import ItemPage from '../components/ItemPage/ItemPage';
 
 
 describe('Footer component', () => {

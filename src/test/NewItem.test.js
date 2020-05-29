@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
-import NewItem from '../components/NewItemForm/NewItemForm'
+import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
+import NewItem from '../components/NewItemForm/NewItemForm';
 
 
 describe('Footer component', () => {

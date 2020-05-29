@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-import LandingHeader from '../../views/LandingHeader'
-import TokenService from '../../services/token-service'
-import '../../styles/Login.css'
+import { Link } from 'react-router-dom';
+import LandingHeader from '../../views/LandingHeader';
+import TokenService from '../../services/token-service';
+import '../../styles/Login.css';
 import AuthApiService from '../../services/auth-api-service';
 
 export default class Login extends Component {

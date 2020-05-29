@@ -1,8 +1,8 @@
 import React, { Component} from 'react';
-import GearContext from '../../GearContext'
+import GearContext from '../../GearContext';
 import MainHeader from '../../views/MainHeader';
 import config from '../../config';
-import '../../styles/EditItem.css'
+import '../../styles/EditItem.css';
 
 export default class EditItemForm extends Component {
     state = {
@@ -68,9 +68,9 @@ export default class EditItemForm extends Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        const { item_id } = this.props.match.params
-        const { id, rating, gear_name, features, comments } = this.state
-        const newItem = { id, rating, gear_name, features, comments } 
+        const { item_id } = this.props.match.params;
+        const { id, rating, gear_name, features, comments } = this.state;
+        const newItem = { id, rating, gear_name, features, comments }
         fetch(`${config.API_ENDPOINT}/api/items/${item_id}`, {
             method: 'PATCH',
             body: JSON.stringify(newItem),
