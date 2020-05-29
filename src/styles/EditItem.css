@@ -10,6 +10,10 @@ fieldset {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
 }
 
+textarea {
+    margin: 10px auto; 
+}
+
 
 legend {
     text-align: center; 
@@ -35,6 +39,14 @@ textarea {
     height: 45px; 
 }
 
+select {
+    display: flex;
+    margin: 5px auto; 
+}
+
+
+
+
 
 .gb-edit__button {
     text-decoration: none;
@@ -46,8 +58,8 @@ textarea {
     border: none; 
     border-radius: 20px; 
     font-size: 15px;
-    margin-left: 100px; 
-    margin-top: 25px; 
+    margin-left: 105px; 
+    margin-top: 25px;
 }
 
 .gb-edit__button:hover {
@@ -70,6 +82,7 @@ textarea {
     font-size: 15px; 
     display: flex; 
     justify-content: center;
+    padding-top: 10px; 
 }
 
 .gb-edit__goback-button:hover {

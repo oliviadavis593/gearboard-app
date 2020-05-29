@@ -40,7 +40,7 @@ class Item extends Component {
         const { gear_name, item_id } = this.props; 
         return(
              <div className='gb-item'>
-                <Link to={`/item/${item_id}`}>
+                <Link to={`/items/${item_id}`}>
                     <h2 className='gb-item__gear_name'>
                         {gear_name}
                     </h2>

@@ -49,7 +49,7 @@ export default class Login extends Component {
                     >
                         <fieldset>
                             <legend><h2>Login</h2></legend>
-                            <label htmlFor='user-email'>Email:</label>
+                            <label htmlFor='user-email'>Email</label>
                             <input 
                             id='user-email'
                             type='email'
@@ -57,7 +57,7 @@ export default class Login extends Component {
                             required
                             />
     
-                            <label htmlFor='user-password'>Password:</label>
+                            <label htmlFor='user-password'>Password</label>
                             <input 
                             id='user-password'
                             type='password'
