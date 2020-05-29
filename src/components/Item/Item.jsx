@@ -12,7 +12,7 @@ class Item extends Component {
     static contextType = GearContext; 
 
     handleClickDelete = e => {
-        const item_id = this.props.id
+        const item_id = this.props.item_id
 
         fetch(`${config.API_ENDPOINT}/api/items/${item_id}`, {
             method: 'DELETE',
